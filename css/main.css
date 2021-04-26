@@ -365,7 +365,7 @@ nav li a:hover {
     position: absolute;
     width: 200px;
     height: 20em;
-    background: url("images/dots.svg") no-repeat;
+    background: url("images/bullet.svg") no-repeat;
     left: 4.5em;
     top: 2em;
   }
