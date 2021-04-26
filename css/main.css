@@ -119,7 +119,7 @@ ul.features-list li:before {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-image: url("images/bullet.svg");
+  background-image: url("../images/bullet.svg");
   background-size: contain;
   margin-right: .5em;
 }
@@ -365,7 +365,7 @@ nav li a:hover {
     position: absolute;
     width: 200px;
     height: 20em;
-    background: url("/SeanPrice13/images/dots.svg") no-repeat;
+    background: url("../images/dots.svg") no-repeat;
     left: 4.5em;
     top: 2em;
   }

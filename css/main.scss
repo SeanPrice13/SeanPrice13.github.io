@@ -112,7 +112,7 @@ ul.features-list {
             position: absolute;
             width: 20px;
             height: 20px;
-            background-image: url('images/bullet.svg');
+            background-image: url('../images/bullet.svg');
             background-size: contain;
             margin-right: .5em;
         }
@@ -211,7 +211,6 @@ nav {
         grid-template-columns: 180px auto;
         justify-content: unset;
     }
-//remember here
 
     .navbar nav {
         display: flex;
@@ -238,6 +237,11 @@ nav {
 
         li.current a {
             font-weight: bold;
+            color: white;
+            background-color: blue;
+            border: 2px solid blue;
+            border-radius: 5em;
+            margin-top: -.2em;
         }
         li.go-premium-cta a {
             color: blue;
@@ -364,7 +368,7 @@ nav {
             position: absolute;
             width: 200px;
             height: 20em;
-            background: url('images/dots.svg') no-repeat;
+            background: url('../images/dots.svg') no-repeat;
             left: 4.5em;
             top: 2em;
         }
