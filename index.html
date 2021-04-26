@@ -9,7 +9,7 @@
     <body>
         <div class="navbar">
             <div class="container">
-                <a class="logo" href="#">SeanPrice<span>13</span></a>
+                <a class="logo" href="index.html">SeanPrice<span>13</span></a>
                 <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
                 <nav>
                     <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Exit Navigation">
@@ -34,7 +34,7 @@
                     <h1>Try MyWi473!</h1>
 
                     <div class="hero-cta"></div>
-                    <a href="#" class="primary-cta">It's all free.</a>
+                    <a href="mywi.html" class="primary-cta">It's all free.</a>
                     <a href="https://www.youtube.com/channel/UCvAEh0rAfS73A3u0ULm1_pg" class="watch-video-cta">
                         <img src="images/watch.svg" alt="Watch a video."> Watch a video.</a>
                 </div>
