@@ -7,19 +7,25 @@ body {
 }
 
 .navbar {
-    background: white;
+    position: fixed;
+    top: 0;
+    background: lightgray;
     padding: 1em;
+    width: 100%;
+    }
 
     .logo {
         text-decoration: none;
         font-weight: bold;
-        color: black;
+        color: #000000;
         font-size: 1.2em;
-
-        span {
-            color: grey;
+        &:hover {
+            color: #808080;
         }
-    }
+        }
+        span {
+            color: #808080;
+        }
     nav {
         display: none;
     }
@@ -30,9 +36,11 @@ body {
     }
     .mobile-menu {
        cursor: pointer; 
+       position: fixed;
+       right: 0;
+       margin: 0.2em 0.5em 0.5em 1em;
+       padding: 0.5em 1em 0.5em 1em;
     }
-}
-
 a {
     color: #444444;
 }
@@ -92,6 +100,7 @@ section {
 section.features-section {
     background: #20272e;
     color: white;
+    z-index: -999;
 }
 
 ul.features-list {
@@ -99,7 +108,6 @@ ul.features-list {
     padding-left: .1em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-
     li {
         font-size: 1.1em;
         margin-bottom: 1em;
@@ -180,6 +188,7 @@ nav {
     }
 
     li {
+        font-weight: normal;
         a {
             color: white;
             text-decoration: none;
@@ -187,9 +196,12 @@ nav {
             padding: .5em;
             font-size: 1.3em;
             text-align: right;
-
+            
             &:hover {
-                font-weight: bold;
+                color: white;
+            }
+            &:active {
+                color: blue;
             }
         }
     }
@@ -244,7 +256,7 @@ nav {
             margin-top: -.2em;
         }
         li.go-premium-cta a {
-            color: blue;
+            color: rgb(0, 0, 255);
             border: 3px solid blue;
             font-weight: bold;
             border-radius: 5em;
@@ -253,6 +265,8 @@ nav {
             &:hover {
                 background: blue;
                 color: white;
+                border: 3px solid blue;
+                
             }
         }
     }
@@ -298,7 +312,6 @@ nav {
     ul.features-list {
         display: block;
         margin-left: 5em;
-
         li {
             font-size: 1.4em;
 
@@ -375,3 +388,38 @@ nav {
     }
 }
 
+.dl-head {
+    text-align: center;  
+    font-size: 4em; 
+    margin: 0 0 1em 0;
+}
+
+.dl-links {
+    text-align: center;
+    li {
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 1em;
+    padding: 1em;
+    }
+    a {
+        
+        text-decoration: none;
+        color: black;
+        padding: 2em;
+        border-radius: 2em;
+        transition-property: background;
+        transition-duration: 1s;
+        &:hover {
+            color: white;
+            background-color: blue;
+            border-radius: 2em;
+            padding: 2em;
+        }
+        &:active {
+            color: blue;
+            background-color: lightgray;
+        }
+    }
+
+}

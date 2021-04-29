@@ -6,34 +6,45 @@ body {
 }
 
 .navbar {
-  background: white;
+  position: fixed;
+  top: 0;
+  background: lightgray;
   padding: 1em;
+  width: 100%;
 }
 
-.navbar .logo {
+.logo {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: #000000;
   font-size: 1.2em;
 }
 
-.navbar .logo span {
-  color: grey;
+.logo:hover {
+  color: #808080;
 }
 
-.navbar nav {
+span {
+  color: #808080;
+}
+
+nav {
   display: none;
 }
 
-.navbar .container {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   place-content: space-between;
 }
 
-.navbar .mobile-menu {
+.mobile-menu {
   cursor: pointer;
+  position: fixed;
+  right: 0;
+  margin: 0.2em 0.5em 0.5em 1em;
+  padding: 0.5em 1em 0.5em 1em;
 }
 
 a {
@@ -90,11 +101,12 @@ section {
 .hero-img {
   width: 70%;
   margin-top: 3em;
-    }
+}
 
 section.features-section {
   background: #20272e;
   color: white;
+  z-index: -999;
 }
 
 ul.features-list {
@@ -186,6 +198,10 @@ nav ul.primary-nav {
   margin-top: 5em;
 }
 
+nav li {
+  font-weight: normal;
+}
+
 nav li a {
   color: white;
   text-decoration: none;
@@ -196,7 +212,11 @@ nav li a {
 }
 
 nav li a:hover {
-  font-weight: bold;
+  color: white;
+}
+
+nav li a:active {
+  color: blue;
 }
 
 .mobile-menu-exit {
@@ -262,6 +282,7 @@ nav li a:hover {
   .navbar nav li.go-premium-cta a:hover {
     background: blue;
     color: white;
+    border: 3px solid blue;
   }
 }
 
@@ -369,5 +390,45 @@ nav li a:hover {
     left: 4.5em;
     top: 2em;
   }
+}
+
+.dl-head {
+  text-align: center;
+  font-size: 4em;
+  margin: 0 0 1em 0;
+}
+
+.dl-links {
+  text-align: center;
+}
+
+.dl-links li {
+  display: inline-block;
+  font-size: 1.5em;
+  margin: 1em;
+  padding: 1em;
+}
+
+.dl-links a {
+  text-decoration: none;
+  color: black;
+  padding: 2em;
+  border-radius: 2em;
+  -webkit-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.dl-links a:hover {
+  color: white;
+  background-color: blue;
+  border-radius: 2em;
+  padding: 2em;
+}
+
+.dl-links a:active {
+  color: blue;
+  background-color: lightgray;
 }
 /*# sourceMappingURL=main.css.map */
