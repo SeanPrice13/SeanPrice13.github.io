@@ -196,7 +196,8 @@ nav {
             padding: .5em;
             font-size: 1.3em;
             text-align: right;
-            
+            transition-property: color;
+            transition-duration: .1s;
             &:hover {
                 color: white;
             }
@@ -246,7 +247,6 @@ nav {
         ul.primary-nav {
             margin: 0;
         }
-
         li.current a {
             font-weight: bold;
             color: white;
@@ -392,6 +392,8 @@ nav {
     text-align: center;  
     font-size: 4em; 
     margin: 0 0 1em 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .dl-links {
@@ -409,7 +411,7 @@ nav {
         padding: 2em;
         border-radius: 2em;
         transition-property: background;
-        transition-duration: 1s;
+        transition-duration: .5s;
         &:hover {
             color: white;
             background-color: blue;
@@ -419,6 +421,7 @@ nav {
         &:active {
             color: blue;
             background-color: lightgray;
+            border-radius: 2em;
         }
     }
 
