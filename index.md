@@ -31,30 +31,26 @@
                     <p class="subhead">For Grenadians, By Grenadians</p>
                     <h1>Welcome!</h1>
                     <div class="hero-cta"></div>
-                    <a href="mywi.html" class="primary-cta">It's all free.</a>
-                    <a href="https://www.youtube.com/channel/UCvAEh0rAfS73A3u0ULm1_pg?sub_confirmation=1" target="_blank" class="subscribe-cta">
-                        <img src="images/watch.svg" alt="Subscribe">Subscribe to my channel!</a>
+                    <a href="#" class="primary-cta">Get Started.</a>
+                    <a href="https://www.youtube.com/channel/UCvAEh0rAfS73A3u0ULm1_pg?sub_confirmation=1" target="_blank" class="subscribe-cta"><img src="images/watch.svg" alt="Subscribe">Subscribe to my channel!</a>
                 </div>
             </div>
-            <section class="yt-section">
                 <div class="yt-video">
                     <iframe src="https://www.youtube.com/embed/gDCMg-no2Rs" title="Most Recent Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-                </div>
-            </section>        
+                </div>     
             </div> 
         </section>
     
     <section class="features-section">
         <div class="container">
             <ul class="features-list">
-                <li>Facebook</li>
-                <li>YouTube</li>
-                <li>Discord</li>
-                <li>Twitch</li>
-                <li>Twitter</li>
+                <li><a href="https://facebook.com/bentleyprice" target="_blank"><img src="images/facebook.svg" class="fb-btn" alt="Facebook"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCvAEh0rAfS73A3u0ULm1_pg" target="_blank"><img src="images/youtube.svg" class="yt-btn" alt="YouTube"></a></li>
+                <li><a href="https://discord.gg/qMBwJfm" target="_blank"><img src="images/discord.svg" class="dscrd-btn" alt="Discord"></a></li>
+                <li><a href="https://twitch.com/SeanPrice13" target="_blank"><img src="images/twitch.svg" class="twch-btn" alt="Twitch"></a></li>
+                <li><a href="https://twitter.com/SeanPrice13_YT" target="_blank"><img src="images/twitter.svg" class="twtr-btn" alt="Twitter"></a></li>
+                <li><a href="http://wa.me/4734583630" target="_blank"><img src="images/whatsapp.svg" class="wa-btn" alt="WhatsApp"></a></li>
             </ul>
-
-            <img src="images/holding-phone.jpg" alt="Man holding phone">
         </div>
     </section>
 
