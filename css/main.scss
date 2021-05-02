@@ -24,6 +24,40 @@ nav {display: none;}
 .container {display: flex;
         place-content: space-between;}
 
+.features-section {background: #20272e;}
+
+#twtr-btn {width: 1.5em;
+                    height: 1.5em;
+                    padding: 1em;
+                    border-radius: 1em;
+                    &:hover {background-color: #00acee;}}
+#twch-btn {width: 1.5em;
+                    height: 1.5em;
+                    padding: 1em;
+                    border-radius: 1em;
+                    &:hover {background-color: #9147fe;}}
+#dscrd-btn {width: 1.5em;
+                    height: 1.5em;
+                    padding: 1em;
+                    border-radius: 1em;
+                    &:hover {background-color: #7289d9;}}
+#fb-btn {width: 1.5em;
+                    height: 1.5em;
+                    padding: 1em;
+                    border-radius: 1em;
+                    &:hover {background-color: #3b5998;}}
+#yt-btn {width: 1.5em;
+                    height: 1.5em;
+                    padding: 1em;
+                    border-radius: 1em;
+                    &:hover {background-color: #FF0000;}}
+#wa-btn {width: 1.5em;
+                    height: 1.5em;
+                    padding: 1em;
+                    border-radius: 1em;
+                    &:hover {background-color: #4fce5d;}}
+        
+        
 .mobile-menu {cursor: pointer; 
        position: relative;
        right: 0;
@@ -34,13 +68,16 @@ a {color: black;}
 
 ul {list-style-type: none;
     margin: 0;
-    padding: 0;}
+    padding: 0;
+    li {display: inline;}}
 
-section {padding: 5em 2em;}
+section {padding: 1em 2em;}
 
 .hero {text-align: center;}
 
-.left-col {.subhead {text-transform: uppercase;
+.left-col {top: 10%;
+        left: 10%;
+     .subhead {text-transform: uppercase;
         font-weight: bold;
         color: grey;
         letter-spacing: .3em;}
@@ -69,43 +106,6 @@ section {padding: 5em 2em;}
         img {margin-right: .5em;}}
     iframe {position: relative;}}
 
-.features-section {background: #20272e;
-    li {display: inline;
-        position: relative;}
-        .twtr-btn {width: 1.5em;
-            height: 1.5em;
-            padding: 1em;
-            border-radius: 1em;
-            &:hover {background-color: #00acee;}}
-        .twch-btn {width: 1.5em;
-            height: 1.5em;
-            padding: 1em;
-            border-radius: 1em;
-            &:hover {background-color: #9147fe;}}
-        .dscrd-btn {width: 1.5em;
-            height: 1.5em;
-            padding: 1em;
-            border-radius: 1em;
-            &:hover {background-color: #7289d9;}}
-        .fb-btn {width: 1.5em;
-            height: 1.5em;
-            padding: 1em;
-            border-radius: 1em;
-            &:hover {background-color: #3b5998;}}
-        .yt-btn {width: 1.5em;
-            height: 1.5em;
-            padding: 1em;
-            border-radius: 1em;
-            &:hover {background-color: #FF0000;}}
-        .wa-btn {width: 1.5em;
-            height: 1.5em;
-            padding: 1em;
-            border-radius: 1em;
-            &:hover {background-color: #4fce5d;}}}
-
-.features-section img {display:inline;
-    position: relative;}
-
 h2 {font-size: 2em;}
 
 iframe {width: 100%;
@@ -130,8 +130,8 @@ nav {position: fixed;
             text-align: right;
             transition-property: color;
             transition-duration: .3s;
-            &:hover {color: blue;}
-            &:active {color: lightgray;}}}}
+            &:hover {color: gray;}
+            &:active {color: blue;}}}}
 
 .mobile-menu-exit {float:right;
                     margin: .5em;

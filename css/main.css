@@ -43,6 +43,76 @@ nav {
   place-content: space-between;
 }
 
+.features-section {
+  background: #20272e;
+}
+
+#twtr-btn {
+  width: 1.5em;
+  height: 1.5em;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+#twtr-btn:hover {
+  background-color: #00acee;
+}
+
+#twch-btn {
+  width: 1.5em;
+  height: 1.5em;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+#twch-btn:hover {
+  background-color: #9147fe;
+}
+
+#dscrd-btn {
+  width: 1.5em;
+  height: 1.5em;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+#dscrd-btn:hover {
+  background-color: #7289d9;
+}
+
+#fb-btn {
+  width: 1.5em;
+  height: 1.5em;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+#fb-btn:hover {
+  background-color: #3b5998;
+}
+
+#yt-btn {
+  width: 1.5em;
+  height: 1.5em;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+#yt-btn:hover {
+  background-color: #FF0000;
+}
+
+#wa-btn {
+  width: 1.5em;
+  height: 1.5em;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+#wa-btn:hover {
+  background-color: #4fce5d;
+}
+
 .mobile-menu {
   cursor: pointer;
   position: relative;
@@ -61,12 +131,21 @@ ul {
   padding: 0;
 }
 
+ul li {
+  display: inline;
+}
+
 section {
-  padding: 5em 2em;
+  padding: 1em 2em;
 }
 
 .hero {
   text-align: center;
+}
+
+.left-col {
+  top: 10%;
+  left: 10%;
 }
 
 .left-col .subhead {
@@ -124,86 +203,6 @@ section {
   position: relative;
 }
 
-.features-section {
-  background: #20272e;
-}
-
-.features-section li {
-  display: inline;
-  position: relative;
-}
-
-.features-section .twtr-btn {
-  width: 1.5em;
-  height: 1.5em;
-  padding: 1em;
-  border-radius: 1em;
-}
-
-.features-section .twtr-btn:hover {
-  background-color: #00acee;
-}
-
-.features-section .twch-btn {
-  width: 1.5em;
-  height: 1.5em;
-  padding: 1em;
-  border-radius: 1em;
-}
-
-.features-section .twch-btn:hover {
-  background-color: #9147fe;
-}
-
-.features-section .dscrd-btn {
-  width: 1.5em;
-  height: 1.5em;
-  padding: 1em;
-  border-radius: 1em;
-}
-
-.features-section .dscrd-btn:hover {
-  background-color: #7289d9;
-}
-
-.features-section .fb-btn {
-  width: 1.5em;
-  height: 1.5em;
-  padding: 1em;
-  border-radius: 1em;
-}
-
-.features-section .fb-btn:hover {
-  background-color: #3b5998;
-}
-
-.features-section .yt-btn {
-  width: 1.5em;
-  height: 1.5em;
-  padding: 1em;
-  border-radius: 1em;
-}
-
-.features-section .yt-btn:hover {
-  background-color: #FF0000;
-}
-
-.features-section .wa-btn {
-  width: 1.5em;
-  height: 1.5em;
-  padding: 1em;
-  border-radius: 1em;
-}
-
-.features-section .wa-btn:hover {
-  background-color: #4fce5d;
-}
-
-.features-section img {
-  display: inline;
-  position: relative;
-}
-
 h2 {
   font-size: 2em;
 }
@@ -246,11 +245,11 @@ nav li a {
 }
 
 nav li a:hover {
-  color: blue;
+  color: gray;
 }
 
 nav li a:active {
-  color: lightgray;
+  color: blue;
 }
 
 .mobile-menu-exit {
