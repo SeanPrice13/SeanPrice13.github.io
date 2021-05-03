@@ -36,11 +36,11 @@
                 </div>
             </div>
                 <div class="yt-video">
-                    <iframe src="https://www.youtube.com/embed/gDCMg-no2Rs" title="Most Recent Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-                </div>     
-            </div> 
+                    <iframe src="https://www.youtube.com/embed/9No-FiEInLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
         </section>
-    
+
     <section class="features-section">
         <div class="container">
             <ul class="features-list">
