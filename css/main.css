@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 body {
-  background: lightgray;
+  background: #d3d3d3;
   margin: 0;
   font-family: 'Poppins';
 }
@@ -43,7 +43,17 @@ nav {
   place-content: space-between;
 }
 
-.features-section {
+.social-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-section {
   background: #20272e;
 }
 
@@ -172,11 +182,10 @@ section {
   display: inline;
   -webkit-transition-property: background;
   transition-property: background;
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
   -webkit-transition-property: color;
   transition-property: color;
-  transition-duration: .5s;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
 
 .left-col .primary-cta:hover {
@@ -259,7 +268,8 @@ nav li a:active {
 }
 
 @media only screen and (min-width: 768px) {
-  .mobile-menu, .mobile-menu-exit {
+  .mobile-menu,
+  .mobile-menu-exit {
     display: none;
   }
   .navbar .container {
@@ -307,6 +317,22 @@ nav li a:active {
   }
 }
 
+.social-section {
+  text-align: center;
+}
+
+.social-section li a {
+  margin: 2.5em;
+}
+
+.social-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
+  justify-self: center;
+}
+
 @media only screen and (min-width: 1080px) {
   .container {
     width: 1080px;
@@ -339,61 +365,74 @@ nav li a:active {
   .primary-cta {
     margin-right: 1em;
   }
-  .features-list {
+  .social-section {
+    text-align: center;
+  }
+  .social-section li a {
+    margin: 2.5em;
+  }
+  .social-container {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    text-align: center;
+    justify-self: center;
+  }
+  .social-list {
     margin: 0 6em 0 6em;
   }
-  .features-list .twtr-btn {
+  .social-list #twtr-btn {
     width: 2em;
     height: 2em;
     padding: 1em;
     border-radius: 1em;
   }
-  .features-list .twtr-btn:hover {
+  .social-list #twtr-btn:hover {
     background-color: #00acee;
   }
-  .features-list .twch-btn {
+  .social-list #twch-btn {
     width: 2em;
     height: 2em;
     padding: 1em;
     border-radius: 1em;
   }
-  .features-list .twch-btn:hover {
+  .social-list #twch-btn:hover {
     background-color: #9147fe;
   }
-  .features-list .dscrd-btn {
+  .social-list #dscrd-btn {
     width: 2em;
     height: 2em;
     padding: 1em;
     border-radius: 1em;
   }
-  .features-list .dscrd-btn:hover {
+  .social-list #dscrd-btn:hover {
     background-color: #7289d9;
   }
-  .features-list .fb-btn {
+  .social-list #fb-btn {
     width: 2em;
     height: 2em;
     padding: 1em;
     border-radius: 1em;
   }
-  .features-list .fb-btn:hover {
+  .social-list #fb-btn:hover {
     background-color: #3b5998;
   }
-  .features-list .yt-btn {
+  .social-list #yt-btn {
     width: 2em;
     height: 2em;
     padding: 1em;
     border-radius: 1em;
   }
-  .features-list .yt-btn:hover {
+  .social-list #yt-btn:hover {
     background-color: #FF0000;
   }
-  .features-list .wa-btn {
+  .social-list #wa-btn {
     width: 2em;
     height: 2em;
     padding: 1em;
     border-radius: 1em;
   }
-  .features-list .wa-btn:hover {
+  .social-list #wa-btn:hover {
     background-color: #4fce5d;
   }
 }
@@ -401,7 +440,7 @@ nav li a:active {
 .dl-head {
   text-align: center;
   font-size: 4em;
-  margin: 0 0 1em 0;
+  margin-top: 1em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -410,7 +449,46 @@ nav li a:active {
           align-items: center;
 }
 
-.features-section li a {
-  margin: 2.5em;
+.dl-links-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  padding: 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid-item a {
+  padding: 2em;
+  border-radius: 3em;
+  text-decoration: none;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.grid-item a:hover {
+  background-color: blue;
+  color: white;
+}
+
+.grid-item {
+  padding: 2em;
+}
+
+h3 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 300px;
 }
 /*# sourceMappingURL=main.css.map */
