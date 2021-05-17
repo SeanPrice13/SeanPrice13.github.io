@@ -20,7 +20,7 @@
                     <li><a href="other.html">Other</a></li>
                 </ul>
                 <ul class="secondary-nav">
-                    <li><a href="donate.html">Donate</a></li>                       
+                    <li><a href="about.html">About Me</a></li>                       
                 </ul>
             </nav>
         </div>
@@ -32,7 +32,7 @@
                     <p class="subhead">473 Repository</p>
                     <h1>Welcome!</h1>
                     <div class="hero-cta"></div>
-                    <a href="other.html" class="primary-cta">Get Started.</a>
+                    <a href="about.html" class="primary-cta">Employer?<br></br>Click Here.</a>
                     <a href="https://www.youtube.com/channel/UCvAEh0rAfS73A3u0ULm1_pg?sub_confirmation=1" target="_blank" class="subscribe-cta"><img src="images/watch.svg" alt="Subscribe">Subscribe to my channel!</a>
                 </div>
             </div>
