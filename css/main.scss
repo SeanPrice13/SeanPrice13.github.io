@@ -1,553 +1,590 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
 body {
-    background: #d3d3d3;
-    margin: 0;
-    font-family: 'Poppins';
+  background: #d3d3d3;
+  margin: 0;
+  font-family: "Poppins";
 }
 
 .navbar {
-    position: fixed;
-    top: 0;
-    background: lightgray;
-    padding: 1em;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  background: lightgray;
+  padding: 1em;
+  width: 100%;
 }
 
 .logo {
-    text-decoration: none;
-    font-weight: bold;
-    color: #000000;
-    font-size: 1.2em;
-    transition-property: color;
-    transition-duration: .3s;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  font-size: 1.2em;
+  transition-property: color;
+  transition-duration: 0.3s;
 
-    &:hover {
-        color: #808080;
-    }
+  &:hover {
+    color: #808080;
+  }
 
-    span {
-        color: #808080;
-    }
+  span {
+    color: #808080;
+  }
 }
 
 nav {
-    display: none;
+  display: none;
 }
 
 .container {
-    display: flex;
-    place-content: space-between;
+  display: flex;
+  place-content: space-between;
 }
 
 .social-container {
-    display: inline-flex;
-    text-align: center;
-    justify-content: center;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .social-section {
-    background: #20272e;
+  background: #20272e;
 }
 
 #twtr-btn {
-    width: 1.5em;
-    height: 1.5em;
-    padding: 1em;
-    border-radius: 1em;
-    transition-property: background-color;
-    transition-duration: 0.3s;
-    &:hover {
-        background-color: #00acee;        
-    }
+  width: 1.5em;
+  height: 1.5em;
+  padding: 1em;
+  border-radius: 1em;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  &:hover {
+    background-color: #00acee;
+  }
 }
 
 #twch-btn {
-    width: 1.5em;
-    height: 1.5em;
-    padding: 1em;
-    border-radius: 1em;
-    transition-property: background-color;
-    transition-duration: 0.3s;
-    &:hover {
-        background-color: #9147fe;
-    }
+  width: 1.5em;
+  height: 1.5em;
+  padding: 1em;
+  border-radius: 1em;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  &:hover {
+    background-color: #9147fe;
+  }
 }
 
 #dscrd-btn {
-    width: 1.5em;
-    height: 1.5em;
-    padding: 1em;
-    border-radius: 1em;
-    transition-property: background-color;
-    transition-duration: 0.3s;
-    &:hover {
-        background-color: #7289d9;
-    }
+  width: 1.5em;
+  height: 1.5em;
+  padding: 1em;
+  border-radius: 1em;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  &:hover {
+    background-color: #7289d9;
+  }
 }
 
 #fb-btn {
-    width: 1.5em;
-    height: 1.5em;
-    padding: 1em;
-    border-radius: 1em;
-    transition-property: background-color;
-    transition-duration: 0.3s;
-    &:hover {
-        background-color: #3b5998;
-    }
+  width: 1.5em;
+  height: 1.5em;
+  padding: 1em;
+  border-radius: 1em;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  &:hover {
+    background-color: #3b5998;
+  }
 }
 
 #yt-btn {
-    width: 1.5em;
-    height: 1.5em;
-    padding: 1em;
-    border-radius: 1em;
-    transition-property: background-color;
-    transition-duration: 0.3s;
-    &:hover {
-        background-color: #FF0000;
-    }
+  width: 1.5em;
+  height: 1.5em;
+  padding: 1em;
+  border-radius: 1em;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  &:hover {
+    background-color: #ff0000;
+  }
 }
 
 #wa-btn {
-    width: 1.5em;
-    height: 1.5em;
-    padding: 1em;
-    border-radius: 1em;
-    transition-property: background-color;
-    transition-duration: 0.3s;
-    &:hover {
-        background-color: #4fce5d;
-    }
+  width: 1.5em;
+  height: 1.5em;
+  padding: 1em;
+  border-radius: 1em;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  &:hover {
+    background-color: #4fce5d;
+  }
 }
 
-
 .mobile-menu {
-    cursor: pointer;
-    position: relative;
-    right: 0;
-    margin: 0.2em 1.5em 0.5em 1em;
-    padding: 0.5em 1em 0.5em 1em;
+  cursor: pointer;
+  position: relative;
+  right: 0;
+  margin: 0.2em 1.5em 0.5em 1em;
+  padding: 0.5em 1em 0.5em 1em;
 }
 
 a {
-    color: black;
+  color: black;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 
-    li {
-        display: inline;
-    }
+  li {
+    display: inline;
+  }
 }
 
 section {
-    padding: 1em 2em;
+  padding: 1em 2em;
 }
 
 .hero {
-    text-align: center;
+  text-align: center;
 }
 
 .left-col {
-    top: 10%;
-    left: 10%;
+  top: 10%;
+  left: 10%;
 
-    .subhead {
-        text-transform: uppercase;
-        font-weight: bold;
-        color: grey;
-        letter-spacing: .3em;
+  .subhead {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: grey;
+    letter-spacing: 0.3em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.3em;
+    margin-top: 0.2em;
+  }
+
+  .primary-cta {
+    background: lightgray;
+    color: blue;
+    text-decoration: none;
+    padding: 0.6em 1.3em;
+    font-size: 1.3rem;
+    border-radius: 5em;
+    font-weight: bold;
+    display: inline-flex;
+    transition-property: background;
+    transition-property: color;
+    transition-duration: 0.3s;
+    line-height: 0.75em;
+    &:hover {
+      color: white;
+      background: blue;
+    }
+  }
+
+  .subscribe-cta {
+    display: block;
+    margin-top: 2em;
+    text-decoration: none;
+    margin-bottom: 1em;
+
+    &:hover {
+      text-decoration: underline;
     }
 
-    h1 {
-        font-size: 2.5em;
-        line-height: 1.3em;
-        margin-top: .2em;
+    img {
+      margin-right: 0.5em;
     }
+  }
 
-    .primary-cta {
-        background: lightgray;
-        color: blue;
-        text-decoration: none;
-        padding: .6em 1.3em;
-        font-size: 1.3rem;
-        border-radius: 5em;
-        font-weight: bold;
-        display: inline-flex;
-        transition-property: background;
-        transition-property: color;
-        transition-duration: .3s;
-        line-height: .75em;
-        &:hover {
-            color: white;
-            background: blue;
-        }
-    }
-
-    .subscribe-cta {
-        display: block;
-        margin-top: 2em;
-        text-decoration: none;
-        margin-bottom: 1em;
-
-        &:hover {
-            text-decoration: underline;
-        }
-
-        img {
-            margin-right: .5em;
-        }
-    }
-
-    iframe {
-        position: relative;
-    }
+  iframe {
+    position: relative;
+  }
 }
 
 h2 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 iframe {
-    width: 100%;
-    height: 560px;
-    border-radius: 3em;
+  width: 100%;
+  height: 560px;
+  border-radius: 3em;
+}
+
+#projects {
+  display: flex;
+  justify-content: center;
+
+  #rps-button {
+    margin: 5em 0.5em 1em 0.5em;
+    text-align: center;
+    padding: 1em;
+  }
+}
+
+#rps-game {
+  height: 90vh;
+  width: 99.7%;
+  display: none;
 }
 
 nav.menu-btn {
-    display: block;
+  display: block;
 }
 
 nav {
-    position: fixed;
-    width: 66%;
-    right: 0;
-    top: 0;
-    background: #20272e;
-    height: 100vh;
-    padding: 1em;
+  position: fixed;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: #20272e;
+  height: 100vh;
+  padding: 1em;
 
-    ul.primary-nav {
-        margin-top: 5em;
+  ul.primary-nav {
+    margin-top: 5em;
+  }
+
+  li {
+    a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 0.5em;
+      font-size: 1.3em;
+      text-align: right;
+      transition-property: color;
+      transition-duration: 0.3s;
+
+      &:hover {
+        color: gray;
+      }
+
+      &:active {
+        color: blue;
+      }
     }
-
-    li {
-        a {
-            color: white;
-            text-decoration: none;
-            display: block;
-            padding: .5em;
-            font-size: 1.3em;
-            text-align: right;
-            transition-property: color;
-            transition-duration: .3s;
-
-            &:hover {
-                color: gray;
-            }
-
-            &:active {
-                color: blue;
-            }
-        }
-    }
+  }
 }
 
 .mobile-menu-exit {
-    float: right;
-    margin: .5em;
-    cursor: pointer;
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
+  .mobile-menu,
+  .mobile-menu-exit {
+    display: none;
+  }
 
-    .mobile-menu,
-    .mobile-menu-exit {
-        display: none;
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+    justify-content: unset;
+  }
+
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+
+    ul {
+      display: flex;
     }
 
-    .navbar .container {
-        display: grid;
-        grid-template-columns: 180px auto;
-        justify-content: unset;
+    a {
+      color: black;
+      font-size: 1em;
+      padding: 0.1em 1em;
     }
 
-    .navbar nav {
-        display: flex;
-        justify-content: space-between;
-        background: none;
-        position: unset;
-        height: auto;
-        width: 100%;
-        padding: 0;
-
-        ul {
-            display: flex;
-        }
-
-        a {
-            color: black;
-            font-size: 1em;
-            padding: .1em 1em;
-        }
-
-        ul.primary-nav {
-            margin: 0;
-        }
-
-        li.current a {
-            font-weight: bold;
-            color: white;
-            background-color: blue;
-            border: 2px solid blue;
-            border-radius: 5em;
-            margin-top: -.2em;
-        }
+    ul.primary-nav {
+      margin: 0;
     }
+
+    li.current a {
+      font-weight: bold;
+      color: white;
+      background-color: blue;
+      border: 2px solid blue;
+      border-radius: 5em;
+      margin-top: -0.2em;
+    }
+  }
 }
 
 .social-section {
-    text-align: center;    
-    li a {
-        margin: 2.5em;
-    }
+  text-align: center;
+  li a {
+    margin: 2.5em;
+  }
 }
 
 .social-container {
-    display: inline-flex;
-    text-align: center;
-    justify-self: center;
+  display: inline-flex;
+  text-align: center;
+  justify-self: center;
 }
 
 @media only screen and (min-width: 1080px) {
-    .container {
-        width: 1080px;
-        margin: 0 auto;
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+
+  section {
+    padding: 3em 4em;
+  }
+
+  .hero .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+
+    .left-col {
+      margin: 3em 3em 0 5em;
+
+      h1 {
+        font-size: 3em;
+        width: 90%;
+      }
+    }
+  }
+
+  .hero-cta {
+    display: flex;
+  }
+
+  .primary-cta {
+    margin-right: 1em;
+  }
+
+  .social-section {
+    text-align: center;
+    li a {
+      margin: 2.5em;
+    }
+  }
+
+  .social-container {
+    display: inline-flex;
+    text-align: center;
+    justify-self: center;
+  }
+  .social-list {
+    margin: 0 6em 0 6em;
+
+    #twtr-btn {
+      width: 2em;
+      height: 2em;
+      padding: 1em;
+      border-radius: 1em;
+      transition-property: background-color;
+      transition-duration: 0.3s;
+      &:hover {
+        background-color: #00acee;
+      }
     }
 
-    section {
-        padding: 3em 4em;
+    #twch-btn {
+      width: 2em;
+      height: 2em;
+      padding: 1em;
+      border-radius: 1em;
+      transition-property: background-color;
+      transition-duration: 0.3s;
+      &:hover {
+        background-color: #9147fe;
+      }
     }
 
-    .hero .container {
-        display: flex;
-        justify-content: space-between;
-        text-align: left;
-
-        .left-col {
-            margin: 3em 3em 0 5em;
-
-            h1 {
-                font-size: 3em;
-                width: 90%;
-            }
-        }
+    #dscrd-btn {
+      width: 2em;
+      height: 2em;
+      padding: 1em;
+      border-radius: 1em;
+      transition-property: background-color;
+      transition-duration: 0.3s;
+      &:hover {
+        background-color: #7289d9;
+      }
     }
 
-    .hero-cta {
-        display: flex;
+    #fb-btn {
+      width: 2em;
+      height: 2em;
+      padding: 1em;
+      border-radius: 1em;
+      transition-property: background-color;
+      transition-duration: 0.3s;
+      &:hover {
+        background-color: #3b5998;
+      }
     }
 
-    .primary-cta {
-        margin-right: 1em;
+    #yt-btn {
+      width: 2em;
+      height: 2em;
+      padding: 1em;
+      border-radius: 1em;
+      transition-property: background-color;
+      transition-duration: 0.3s;
+      &:hover {
+        background-color: #ff0000;
+      }
     }
 
-    .social-section {
-        text-align: center;    
-        li a {
-            margin: 2.5em;
-        }
+    #wa-btn {
+      width: 2em;
+      height: 2em;
+      padding: 1em;
+      border-radius: 1em;
+      transition-property: background-color;
+      transition-duration: 0.3s;
+      &:hover {
+        background-color: #4fce5d;
+      }
     }
-    
-    .social-container {
-        display: inline-flex;
-        text-align: center;
-        justify-self: center;
-    }
-    .social-list {
-        margin: 0 6em 0 6em;
-
-        #twtr-btn {
-            width: 2em;
-            height: 2em;
-            padding: 1em;
-            border-radius: 1em;
-            transition-property: background-color;
-            transition-duration: 0.3s;
-            &:hover {
-                background-color: #00acee;
-            }
-        }
-
-        #twch-btn {
-            width: 2em;
-            height: 2em;
-            padding: 1em;
-            border-radius: 1em;
-            transition-property: background-color;
-            transition-duration: 0.3s;
-            &:hover {
-                background-color: #9147fe;
-            }
-        }
-
-        #dscrd-btn {
-            width: 2em;
-            height: 2em;
-            padding: 1em;
-            border-radius: 1em;
-            transition-property: background-color;
-            transition-duration: 0.3s;
-            &:hover {
-                background-color: #7289d9;
-            }
-        }
-
-        #fb-btn {
-            width: 2em;
-            height: 2em;
-            padding: 1em;
-            border-radius: 1em;
-            transition-property: background-color;
-            transition-duration: 0.3s;
-            &:hover {
-                background-color: #3b5998;
-            }
-        }
-
-        #yt-btn {
-            width: 2em;
-            height: 2em;
-            padding: 1em;
-            border-radius: 1em;
-            transition-property: background-color;
-            transition-duration: 0.3s;
-            &:hover {
-                background-color: #FF0000;
-            }
-        }
-
-        #wa-btn {
-            width: 2em;
-            height: 2em;
-            padding: 1em;
-            border-radius: 1em;
-            transition-property: background-color;
-            transition-duration: 0.3s;
-            &:hover {
-                background-color: #4fce5d;
-            }
-        }
-    }
+  }
 }
 
 .dl-head {
-    text-align: center;
-    font-size: 4em;
-    margin-top: 1em;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  font-size: 4em;
+  margin-top: 1em;
+  justify-content: center;
+  align-items: center;
 }
 
 .dl-links-grid {
-    display: grid;
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
-    grid-template-columns: auto auto auto;
-    padding: 2em;
-    justify-content: center;
-    }
+  display: grid;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  grid-template-columns: auto auto auto;
+  padding: 2em;
+  justify-content: center;
+}
 
 .grid-item a {
-    padding: 2em;
-    border-radius: 3em;
-    text-decoration: none;
-    transition-property: background-color;
-    transition-property: color;
-    transition-duration: 0.3s;
-    &:hover {
-        background-color: blue;
-        color: white;
-    }
+  padding: 2em;
+  border-radius: 3em;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-property: color;
+  transition-duration: 0.3s;
+  &:hover {
+    background-color: blue;
+    color: white;
+  }
 }
 
 .grid-item {
-    padding: 2em;
+  padding: 2em;
 }
 
 h3 {
-    justify-content: center;
-    text-align: center;
-    margin-top: 200px;
-    margin-bottom: 300px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 300px;
 }
 
 .about-head {
-    margin-top: 4em;
-    margin-bottom: 2em;
-    text-align: center;
-    font-size: 2rem;
-    
+  margin-top: 4em;
+  margin-bottom: 2em;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .bio-container {
-    display: block;
-    margin: 2em;
-    padding: 2em;
-    
+  display: block;
+  padding: 2em;
 }
 
 .me-container {
-    display: flexbox;
-    margin: 2em;
-    border: .5em solid blue;
-    border-radius: 1em;
-    padding: 1em 1em 0 1em;
+  display: flexbox;
+  margin: 2em 0 0 0;
+  //border: .5em solid rgb(0, 0, 255);
+  border-radius: 1em;
+  padding: 1em 1em 0 1em;
+  //background: linear-gradient(lightgray 25%, #597fa8 67%);
 }
 
 .portrait {
-    height: 50vh;
-    border-radius: 50%;
-    border: .5em solid blue;
-    display: block;
-    margin: auto;
+  height: 15em;
+  border-radius: 50%;
+  //border: .5em solid blue;
+  display: block;
+  margin: auto;
 }
 
 .my-name {
-    font-size: 2rem;
-    display: block;
-    text-align: center;
-    margin: 1em 0 1em 0;
-    text-decoration: underline;
-
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  margin: 1em 0 1em 0;
+  text-decoration: underline;
 }
 
 .skill {
-    display: block;
-    margin-bottom: .5em;
+  display: block;
+  margin-bottom: 0.5em;
 }
 
 .bio {
-    display: flex;
-    padding: .5em;
-    border-bottom: .5em solid grey;
-    border-bottom-style: dashed;
-    
+  display: flex;
+  padding: 0.5em;
+  line-height: 1rem;
+  //border-bottom: 0.5em solid grey;
+  //border-bottom-style: dashed;
 }
 
 .skills {
-    display: inline-flexbox;
-    text-align: center;  
+  display: inline-flexbox;
+  text-align: center;
 }
 
 .skills-head {
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+  display: inline-block;
+}
+
+.cert-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+}
+
+.certs img {
+  width: 30vw;
+}
+
+.more-certs {
+  display: flex;
+  place-content: center;
+  line-height: 3em;
+  text-decoration: none;
+  &:hover {
     text-decoration: underline;
-    text-transform: uppercase;
-    margin-bottom: 1.5em;
-    display: inline-block;
+    color: blue;
+  }
 }

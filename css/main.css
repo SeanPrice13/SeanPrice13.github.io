@@ -2,7 +2,7 @@
 body {
   background: #d3d3d3;
   margin: 0;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 .navbar {
@@ -20,8 +20,8 @@ body {
   font-size: 1.2em;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .logo:hover {
@@ -129,7 +129,7 @@ nav {
 }
 
 #yt-btn:hover {
-  background-color: #FF0000;
+  background-color: #ff0000;
 }
 
 #wa-btn {
@@ -186,20 +186,20 @@ section {
   text-transform: uppercase;
   font-weight: bold;
   color: grey;
-  letter-spacing: .3em;
+  letter-spacing: 0.3em;
 }
 
 .left-col h1 {
   font-size: 2.5em;
   line-height: 1.3em;
-  margin-top: .2em;
+  margin-top: 0.2em;
 }
 
 .left-col .primary-cta {
   background: lightgray;
   color: blue;
   text-decoration: none;
-  padding: .6em 1.3em;
+  padding: 0.6em 1.3em;
   font-size: 1.3rem;
   border-radius: 5em;
   font-weight: bold;
@@ -210,9 +210,9 @@ section {
   transition-property: background;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
-  line-height: .75em;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  line-height: 0.75em;
 }
 
 .left-col .primary-cta:hover {
@@ -232,7 +232,7 @@ section {
 }
 
 .left-col .subscribe-cta img {
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 .left-col iframe {
@@ -247,6 +247,27 @@ iframe {
   width: 100%;
   height: 560px;
   border-radius: 3em;
+}
+
+#projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#projects #rps-button {
+  margin: 5em 0.5em 1em 0.5em;
+  text-align: center;
+  padding: 1em;
+}
+
+#rps-game {
+  height: 90vh;
+  width: 99.7%;
+  display: none;
 }
 
 nav.menu-btn {
@@ -271,13 +292,13 @@ nav li a {
   color: white;
   text-decoration: none;
   display: block;
-  padding: .5em;
+  padding: 0.5em;
   font-size: 1.3em;
   text-align: right;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 nav li a:hover {
@@ -290,7 +311,7 @@ nav li a:active {
 
 .mobile-menu-exit {
   float: right;
-  margin: .5em;
+  margin: 0.5em;
   cursor: pointer;
 }
 
@@ -329,7 +350,7 @@ nav li a:active {
   .navbar nav a {
     color: black;
     font-size: 1em;
-    padding: .1em 1em;
+    padding: 0.1em 1em;
   }
   .navbar nav ul.primary-nav {
     margin: 0;
@@ -340,7 +361,7 @@ nav li a:active {
     background-color: blue;
     border: 2px solid blue;
     border-radius: 5em;
-    margin-top: -.2em;
+    margin-top: -0.2em;
   }
 }
 
@@ -471,7 +492,7 @@ nav li a:active {
             transition-duration: 0.3s;
   }
   .social-list #yt-btn:hover {
-    background-color: #FF0000;
+    background-color: #ff0000;
   }
   .social-list #wa-btn {
     width: 2em;
@@ -552,22 +573,19 @@ h3 {
 
 .bio-container {
   display: block;
-  margin: 2em;
   padding: 2em;
 }
 
 .me-container {
   display: flexbox;
-  margin: 2em;
-  border: .5em solid blue;
+  margin: 2em 0 0 0;
   border-radius: 1em;
   padding: 1em 1em 0 1em;
 }
 
 .portrait {
-  height: 50vh;
+  height: 15em;
   border-radius: 50%;
-  border: .5em solid blue;
   display: block;
   margin: auto;
 }
@@ -582,16 +600,15 @@ h3 {
 
 .skill {
   display: block;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .bio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: .5em;
-  border-bottom: .5em solid grey;
-  border-bottom-style: dashed;
+  padding: 0.5em;
+  line-height: 1rem;
 }
 
 .skills {
@@ -604,5 +621,34 @@ h3 {
   text-transform: uppercase;
   margin-bottom: 1.5em;
   display: inline-block;
+}
+
+.cert-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 10px 0px;
+      grid-template-areas: ". . ." ". . .";
+}
+
+.certs img {
+  width: 30vw;
+}
+
+.more-certs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  line-height: 3em;
+  text-decoration: none;
+}
+
+.more-certs:hover {
+  text-decoration: underline;
+  color: blue;
 }
 /*# sourceMappingURL=main.css.map */
