@@ -17,7 +17,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: black;
-  margin: 25%;
+  padding: 1em;
 }
 
 * body h2 {
@@ -43,7 +43,7 @@
 
 #player-section img {
   display: inline;
-  margin-top: 3em;
+  margin-top: 1.5em;
 }
 
 #player-section img:hover {
@@ -57,12 +57,12 @@
 
 #CPU-section img {
   display: inline-block;
-  margin-top: 3em;
+  margin-top: 1.5em;
 }
 
 img {
-  width: 5em;
-  height: 5em;
+  width: 3em;
+  height: 3em;
   cursor: pointer;
   -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(298deg) brightness(102%) contrast(102%);
           filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(298deg) brightness(102%) contrast(102%);
@@ -74,7 +74,7 @@ img {
 
 #win img {
   display: inline;
-  margin-top: 3em;
+  margin-top: 1.5em;
   -webkit-filter: invert(58%) sepia(98%) saturate(2144%) hue-rotate(78deg) brightness(114%) contrast(129%);
           filter: invert(58%) sepia(98%) saturate(2144%) hue-rotate(78deg) brightness(114%) contrast(129%);
 }
@@ -85,7 +85,7 @@ img {
 
 #lose img {
   display: inline;
-  margin-top: 3em;
+  margin-top: 1.5em;
   -webkit-filter: invert(12%) sepia(99%) saturate(7025%) hue-rotate(360deg) brightness(97%) contrast(111%);
           filter: invert(12%) sepia(99%) saturate(7025%) hue-rotate(360deg) brightness(97%) contrast(111%);
 }
@@ -96,7 +96,7 @@ img {
 
 #tie img {
   display: inline;
-  margin-top: 3em;
+  margin-top: 1.5em;
   -webkit-filter: invert(81%) sepia(93%) saturate(2808%) hue-rotate(358deg) brightness(104%) contrast(108%);
           filter: invert(81%) sepia(93%) saturate(2808%) hue-rotate(358deg) brightness(104%) contrast(108%);
 }
