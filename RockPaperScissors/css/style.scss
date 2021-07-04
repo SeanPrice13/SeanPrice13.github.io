@@ -9,12 +9,16 @@
     display: flex;
     flex-direction: column;
     background-color: black;
+    margin: 25%;
     h2 {
       margin-top: 1em;
     }
     #mid {
       display: flex;
       justify-content: center;
+      p {
+        font-size: 2rem;
+      }
     }
   }
 }
@@ -22,7 +26,6 @@
 //NORMAL
 #player-section {
   text-align: center;
-  height: 40vh;
   img {
     display: inline;
     margin-top: 3em;
@@ -34,15 +37,14 @@
 }
 #CPU-section {
   text-align: center;
-  height: 40vh;
   img {
     display: inline-block;
     margin-top: 3em;
   }
 }
 img {
-  width: 10em;
-  height: 10em;
+  width: 5em;
+  height: 5em;
   cursor: pointer;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(298deg)
     brightness(102%) contrast(102%);
@@ -51,7 +53,6 @@ img {
 //WIN
 #win {
   text-align: center;
-  height: 40vh;
   img {
     display: inline;
     margin-top: 3em;
@@ -63,7 +64,6 @@ img {
 //LOSE
 #lose {
   text-align: center;
-  height: 40vh;
   img {
     display: inline;
     margin-top: 3em;
@@ -75,7 +75,6 @@ img {
 //TIE
 #tie {
   text-align: center;
-  height: 40vh;
   img {
     display: inline;
     margin-top: 3em;

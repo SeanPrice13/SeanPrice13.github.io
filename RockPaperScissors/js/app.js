@@ -9,11 +9,16 @@ let wins = 0,
     ties = 0,
     round = 1;
 
+//First Round Text
+document.getElementById('round').innerText = 'Game ' + round++;
+document.getElementById('status').innerText = 'Pick a hand.';
+
 //Event Listeners
 rock.addEventListener('click', rockChoice);
 paper.addEventListener('click', paperChoice);
 scissors.addEventListener('click', scissorsChoice);
 
+//Functions
 function rockChoice() {
     let rand = comChoice[Math.floor(Math.random() * comChoice.length)];
     comPlayer.src = rand;
@@ -98,6 +103,3 @@ function newRound() {
         comPlayer.src = rock.src;
     }, 1000);
 }
-
-document.getElementById('round').innerText = 'Game ' + round++;
-document.getElementById('status').innerText = 'Pick a hand.';

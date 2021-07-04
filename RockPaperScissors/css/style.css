@@ -17,6 +17,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: black;
+  margin: 25%;
 }
 
 * body h2 {
@@ -32,9 +33,12 @@
           justify-content: center;
 }
 
+* body #mid p {
+  font-size: 2rem;
+}
+
 #player-section {
   text-align: center;
-  height: 40vh;
 }
 
 #player-section img {
@@ -49,7 +53,6 @@
 
 #CPU-section {
   text-align: center;
-  height: 40vh;
 }
 
 #CPU-section img {
@@ -58,8 +61,8 @@
 }
 
 img {
-  width: 10em;
-  height: 10em;
+  width: 5em;
+  height: 5em;
   cursor: pointer;
   -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(298deg) brightness(102%) contrast(102%);
           filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(298deg) brightness(102%) contrast(102%);
@@ -67,7 +70,6 @@ img {
 
 #win {
   text-align: center;
-  height: 40vh;
 }
 
 #win img {
@@ -79,7 +81,6 @@ img {
 
 #lose {
   text-align: center;
-  height: 40vh;
 }
 
 #lose img {
@@ -91,7 +92,6 @@ img {
 
 #tie {
   text-align: center;
-  height: 40vh;
 }
 
 #tie img {
