@@ -243,10 +243,17 @@ h2 {
   font-size: 2em;
 }
 
-iframe {
+#yt-frame {
   width: 100%;
   height: 560px;
   border-radius: 3em;
+}
+
+#rps-game {
+  width: 100%;
+  height: 350px;
+  border-radius: 3em;
+  display: none;
 }
 
 #projects {
@@ -259,15 +266,9 @@ iframe {
 }
 
 #projects #rps-button {
-  margin: 5em 0.5em 1em 0.5em;
+  margin: 5.5em 0.5em 1em 0.5em;
   text-align: center;
   padding: 1em;
-}
-
-#rps-game {
-  height: 90vh;
-  width: 99.7%;
-  display: none;
 }
 
 nav.menu-btn {
