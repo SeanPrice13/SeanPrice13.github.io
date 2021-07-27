@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: white;
-  font-family: cursive, -apple-system, poppins;
+  font-family: cursive;
   text-align: center;
 }
 
@@ -18,33 +17,54 @@
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: black;
-  padding: 1em;
-}
-
-* body h2 {
-  margin-top: 1em;
 }
 
 * body #mid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20vh;
 }
 
 * body #mid p {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
-#player-section {
-  text-align: center;
+* body #player-section,
+* body #CPU-section,
+* body #win,
+* body #lose,
+* body #tie {
+  height: 40vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#player-section img {
+img {
   display: inline;
-  margin-top: 1.5em;
+  width: 10em;
+  height: 10em;
+  cursor: pointer;
+  -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(298deg) brightness(102%) contrast(102%);
+          filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(298deg) brightness(102%) contrast(102%);
 }
 
 #player-section img:hover {
@@ -52,52 +72,17 @@
           filter: invert(8%) sepia(94%) saturate(7445%) hue-rotate(248deg) brightness(107%) contrast(143%);
 }
 
-#CPU-section {
-  text-align: center;
-}
-
-#CPU-section img {
-  display: inline-block;
-  margin-top: 1.5em;
-}
-
-img {
-  width: 3em;
-  height: 3em;
-  cursor: pointer;
-  -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(298deg) brightness(102%) contrast(102%);
-          filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(298deg) brightness(102%) contrast(102%);
-}
-
-#win {
-  text-align: center;
-}
-
 #win img {
-  display: inline;
-  margin-top: 1.5em;
   -webkit-filter: invert(58%) sepia(98%) saturate(2144%) hue-rotate(78deg) brightness(114%) contrast(129%);
           filter: invert(58%) sepia(98%) saturate(2144%) hue-rotate(78deg) brightness(114%) contrast(129%);
 }
 
-#lose {
-  text-align: center;
-}
-
 #lose img {
-  display: inline;
-  margin-top: 1.5em;
   -webkit-filter: invert(12%) sepia(99%) saturate(7025%) hue-rotate(360deg) brightness(97%) contrast(111%);
           filter: invert(12%) sepia(99%) saturate(7025%) hue-rotate(360deg) brightness(97%) contrast(111%);
 }
 
-#tie {
-  text-align: center;
-}
-
 #tie img {
-  display: inline;
-  margin-top: 1.5em;
   -webkit-filter: invert(81%) sepia(93%) saturate(2808%) hue-rotate(358deg) brightness(104%) contrast(108%);
           filter: invert(81%) sepia(93%) saturate(2808%) hue-rotate(358deg) brightness(104%) contrast(108%);
 }

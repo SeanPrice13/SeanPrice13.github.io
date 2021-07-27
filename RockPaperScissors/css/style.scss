@@ -1,86 +1,66 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: white;
-  font-family: cursive, -apple-system, poppins;
+  font-family: cursive;
   text-align: center;
   body {
     display: flex;
     flex-direction: column;
     background-color: black;
-    padding: 1em;
-    h2 {
-      margin-top: 1em;
-    }
     #mid {
       display: flex;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
+      height: 20vh;
       p {
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
+    }
+    #player-section,
+    #CPU-section,
+    #win,
+    #lose,
+    #tie {
+      height: 40vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
 
-//NORMAL
-#player-section {
-  text-align: center;
-  img {
-    display: inline;
-    margin-top: 1.5em;
-    &:hover {
-      filter: invert(8%) sepia(94%) saturate(7445%) hue-rotate(248deg)
-        brightness(107%) contrast(143%);
-    }
-  }
-}
-#CPU-section {
-  text-align: center;
-  img {
-    display: inline-block;
-    margin-top: 1.5em;
-  }
-}
+//DEFAULT HAND COLOR & SIZE
 img {
-  width: 3em;
-  height: 3em;
+  display: inline;
+  width: 10em;
+  height: 10em;
   cursor: pointer;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(298deg)
     brightness(102%) contrast(102%);
 }
-
-//WIN
-#win {
-  text-align: center;
-  img {
-    display: inline;
-    margin-top: 1.5em;
-    filter: invert(58%) sepia(98%) saturate(2144%) hue-rotate(78deg)
-      brightness(114%) contrast(129%);
-  }
+#player-section img:hover {
+  filter: invert(8%) sepia(94%) saturate(7445%) hue-rotate(248deg)
+    brightness(107%) contrast(143%);
 }
 
-//LOSE
-#lose {
-  text-align: center;
-  img {
-    display: inline;
-    margin-top: 1.5em;
-    filter: invert(12%) sepia(99%) saturate(7025%) hue-rotate(360deg)
-      brightness(97%) contrast(111%);
-  }
+//WIN COLOR
+#win img {
+  filter: invert(58%) sepia(98%) saturate(2144%) hue-rotate(78deg)
+    brightness(114%) contrast(129%);
 }
 
-//TIE
-#tie {
-  text-align: center;
-  img {
-    display: inline;
-    margin-top: 1.5em;
-    filter: invert(81%) sepia(93%) saturate(2808%) hue-rotate(358deg)
-      brightness(104%) contrast(108%);
-  }
+//LOSE COLOR
+#lose img {
+  filter: invert(12%) sepia(99%) saturate(7025%) hue-rotate(360deg)
+    brightness(97%) contrast(111%);
+}
+
+//TIE COLOR
+#tie img {
+  filter: invert(81%) sepia(93%) saturate(2808%) hue-rotate(358deg)
+    brightness(104%) contrast(108%);
 }
