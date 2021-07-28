@@ -38,16 +38,20 @@
   z-index: 100;
   width: fit-content;
   background-color: black;
-  top: 0.5em;
-  right: 0.5em;
+  top: 1.5em;
+  right: 1.5em;
   border: none;
   img {
     width: 5em;
     height: 5em;
+    &:hover {
+      filter: invert(8%) sepia(94%) saturate(7445%) hue-rotate(248deg)
+        brightness(107%) contrast(143%);
+    }
   }
 }
 
-//DEFAULT HAND COLOR & SIZE
+//DEFAULT HAND/BUTTON COLOR & SIZE
 img {
   display: inline;
   width: 10em;

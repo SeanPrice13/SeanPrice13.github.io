@@ -11,7 +11,7 @@ let wins = 0,
     round = 1;
 
 //First Round Text
-document.getElementById('round').innerText = 'Game ' + round++;
+document.getElementById('round').innerText = 'Round ' + round++;
 document.getElementById('status').innerText = 'Pick a hand.';
 
 //Event Listeners
@@ -94,7 +94,7 @@ function scissorsChoice() {
 
 function newRound() {
     setTimeout(() => {
-        document.getElementById('round').innerText = 'Game ' + round++;
+        document.getElementById('round').innerText = 'Round ' + round++;
         document.getElementById('status').innerText = 'Wins: ' + wins + ' Losses: ' + losses + ' Ties: ' + ties;
         rock.parentElement.setAttribute('id', 'player-section');
         comPlayer.parentElement.setAttribute('id', 'CPU-section');
