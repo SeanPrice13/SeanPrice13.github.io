@@ -33,6 +33,20 @@
   }
 }
 
+#reload {
+  position: absolute;
+  z-index: 100;
+  width: fit-content;
+  background-color: black;
+  top: 0.5em;
+  right: 0.5em;
+  border: none;
+  img {
+    width: 5em;
+    height: 5em;
+  }
+}
+
 //DEFAULT HAND COLOR & SIZE
 img {
   display: inline;
@@ -45,6 +59,16 @@ img {
 #player-section img:hover {
   filter: invert(8%) sepia(94%) saturate(7445%) hue-rotate(248deg)
     brightness(107%) contrast(143%);
+}
+@media only screen and (max-width: 768px) {
+  img {
+    width: 5em;
+    height: 5em;
+  }
+  #reload img {
+    width: 2.5em;
+    height: 2.5em;
+  }
 }
 
 //WIN COLOR

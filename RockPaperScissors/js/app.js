@@ -3,7 +3,8 @@ const rock = document.getElementById('player-section').firstElementChild,
     paper = rock.nextElementSibling,
     scissors = paper.nextElementSibling,
     comPlayer = document.getElementById('CPU-section').firstElementChild,
-    comChoice = [rock.src, paper.src, scissors.src];
+    comChoice = [rock.src, paper.src, scissors.src],
+    reloadGame = document.getElementById('reload').addEventListener('click', () => location.reload());
 let wins = 0,
     losses = 0,
     ties = 0,

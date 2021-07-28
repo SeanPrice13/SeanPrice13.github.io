@@ -58,6 +58,23 @@
           align-items: center;
 }
 
+#reload {
+  position: absolute;
+  z-index: 100;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: black;
+  top: 0.5em;
+  right: 0.5em;
+  border: none;
+}
+
+#reload img {
+  width: 5em;
+  height: 5em;
+}
+
 img {
   display: inline;
   width: 10em;
@@ -70,6 +87,17 @@ img {
 #player-section img:hover {
   -webkit-filter: invert(8%) sepia(94%) saturate(7445%) hue-rotate(248deg) brightness(107%) contrast(143%);
           filter: invert(8%) sepia(94%) saturate(7445%) hue-rotate(248deg) brightness(107%) contrast(143%);
+}
+
+@media only screen and (max-width: 768px) {
+  img {
+    width: 5em;
+    height: 5em;
+  }
+  #reload img {
+    width: 2.5em;
+    height: 2.5em;
+  }
 }
 
 #win img {
