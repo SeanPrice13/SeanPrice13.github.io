@@ -57,6 +57,7 @@ nav {
   border-radius: 1em;
   transition-property: background-color;
   transition-duration: 0.3s;
+
   &:hover {
     background-color: #00acee;
   }
@@ -69,6 +70,7 @@ nav {
   border-radius: 1em;
   transition-property: background-color;
   transition-duration: 0.3s;
+
   &:hover {
     background-color: #9147fe;
   }
@@ -81,6 +83,7 @@ nav {
   border-radius: 1em;
   transition-property: background-color;
   transition-duration: 0.3s;
+
   &:hover {
     background-color: #7289d9;
   }
@@ -93,6 +96,7 @@ nav {
   border-radius: 1em;
   transition-property: background-color;
   transition-duration: 0.3s;
+
   &:hover {
     background-color: #3b5998;
   }
@@ -105,6 +109,7 @@ nav {
   border-radius: 1em;
   transition-property: background-color;
   transition-duration: 0.3s;
+
   &:hover {
     background-color: #ff0000;
   }
@@ -117,6 +122,7 @@ nav {
   border-radius: 1em;
   transition-property: background-color;
   transition-duration: 0.3s;
+
   &:hover {
     background-color: #4fce5d;
   }
@@ -182,6 +188,7 @@ section {
     transition-property: color;
     transition-duration: 0.3s;
     line-height: 0.75em;
+
     &:hover {
       color: white;
       background: blue;
@@ -228,6 +235,7 @@ h2 {
 #projects {
   display: flex;
   justify-content: center;
+
   #rps-button {
     margin: 5.5em 0.5em 1em 0.5em;
     text-align: center;
@@ -247,9 +255,11 @@ nav {
   background: #20272e;
   height: 100vh;
   padding: 1em;
+
   ul.primary-nav {
     margin-top: 5em;
   }
+
   li {
     a {
       color: white;
@@ -260,9 +270,11 @@ nav {
       text-align: right;
       transition-property: color;
       transition-duration: 0.3s;
+
       &:hover {
         color: gray;
       }
+
       &:active {
         color: blue;
       }
@@ -277,6 +289,7 @@ nav {
 }
 
 @media only screen and (min-width: 768px) {
+
   .mobile-menu,
   .mobile-menu-exit {
     display: none;
@@ -324,6 +337,7 @@ nav {
 
 .social-section {
   text-align: center;
+
   li a {
     margin: 2.5em;
   }
@@ -370,6 +384,7 @@ nav {
 
   .social-section {
     text-align: center;
+
     li a {
       margin: 2.5em;
     }
@@ -380,6 +395,7 @@ nav {
     text-align: center;
     justify-self: center;
   }
+
   .social-list {
     margin: 0 6em 0 6em;
 
@@ -390,6 +406,7 @@ nav {
       border-radius: 1em;
       transition-property: background-color;
       transition-duration: 0.3s;
+
       &:hover {
         background-color: #00acee;
       }
@@ -402,6 +419,7 @@ nav {
       border-radius: 1em;
       transition-property: background-color;
       transition-duration: 0.3s;
+
       &:hover {
         background-color: #9147fe;
       }
@@ -414,6 +432,7 @@ nav {
       border-radius: 1em;
       transition-property: background-color;
       transition-duration: 0.3s;
+
       &:hover {
         background-color: #7289d9;
       }
@@ -426,6 +445,7 @@ nav {
       border-radius: 1em;
       transition-property: background-color;
       transition-duration: 0.3s;
+
       &:hover {
         background-color: #3b5998;
       }
@@ -438,6 +458,7 @@ nav {
       border-radius: 1em;
       transition-property: background-color;
       transition-duration: 0.3s;
+
       &:hover {
         background-color: #ff0000;
       }
@@ -450,6 +471,7 @@ nav {
       border-radius: 1em;
       transition-property: background-color;
       transition-duration: 0.3s;
+
       &:hover {
         background-color: #4fce5d;
       }
@@ -481,6 +503,7 @@ nav {
   transition-property: background-color;
   transition-property: color;
   transition-duration: 0.3s;
+
   &:hover {
     background-color: blue;
     color: white;
@@ -579,8 +602,22 @@ h3 {
   place-content: center;
   line-height: 3em;
   text-decoration: none;
+
   &:hover {
     text-decoration: underline;
     color: blue;
   }
+}
+
+#frp-container {
+  margin-top: 3.5em;
+  display: flex;
+  justify-content: center;
+}
+
+#frp-list li {
+  display: block;
+  border: 1px solid black;
+  margin: .5em;
+  // width: 50%;
 }

@@ -8,6 +8,13 @@
     <link rel="icon" type="image/jpg" href="/SeanPrice13/images/sp13.jpg">
 </head>
 <body>
+        <!-- Messenger Chat Plugin Code -->
+        <div id="fb-root"></div>
+
+        <!-- Your Chat Plugin code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
+
     <div class="navbar">
         <div class="container">
             <a class="logo" href="index.html">SeanPrice<span>13</span></a>
@@ -37,11 +44,11 @@
                 </div>
             </div>
                 <div class="yt-video">
-                    <iframe id="yt-frame" src="https://www.youtube.com/embed/9No-FiEInLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
+                    <iframe id="yt-frame" src="https://www.youtube.com/embed/9No-FiEInLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                </div>     
+            </div> 
         </section>
-
+    
     <section class="social-section">
         <div class="social-container">
             <ul class="social-list">
@@ -54,7 +61,7 @@
             </ul>
         </div>
     </section>
-
+    
     <script src="js/main.js"></script>
 
 </body>
