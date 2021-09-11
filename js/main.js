@@ -13,17 +13,17 @@ mobileBtnExit.addEventListener('click', () => {
 });
 
 rpsBtn.addEventListener('click', () => {
-    if (document.getElementById('rps-game').style.display !== 'block') {
-        document.getElementById('rps-game').style.display = 'block';
+    if (document.getElementById('rps-game1').style.display !== 'block') {
+        document.getElementById('rps-game1').style.display = 'block';
     } else {
-        document.getElementById('rps-game').style.display = 'none';
+        document.getElementById('rps-game1').style.display = 'none';
     }
 });
 
 invoiceBtn.addEventListener('click', () => {
-    if (document.getElementById('invoice-app').style.display !== 'block') {
-        document.getElementById('invoice-app').style.display = 'block';
+    if (document.getElementById('rps-game').style.display !== 'block') {
+        document.getElementById('rps-game').style.display = 'block';
     } else {
-        document.getElementById('invoice-app').style.display = 'none';
+        document.getElementById('rps-game').style.display = 'none';
     }
 });
