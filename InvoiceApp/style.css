@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* body {
+  background-color: #cccccc;
+  margin: 1em;
+  font-size: 1.5em;
+}
+
+* body #full-document {
+  -webkit-box-shadow: 0.1em 0.1em 0.5em black;
+          box-shadow: 0.1em 0.1em 0.5em black;
+  margin: 0.5em;
+  background-color: white;
+}
+
+* body #plus-cont {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* body #plus-cont #add-item,
+* body #plus-cont #redo {
+  width: 2em;
+}
+
+* body #plus-cont #add-item:active,
+* body #plus-cont #redo:active {
+  -webkit-filter: invert(86%) sepia(5%) saturate(4%) hue-rotate(315deg) brightness(100%) contrast(83%);
+          filter: invert(86%) sepia(5%) saturate(4%) hue-rotate(315deg) brightness(100%) contrast(83%);
+}
+
+* body #plus-cont #add-item:hover,
+* body #plus-cont #redo:hover {
+  -webkit-filter: invert(86%) sepia(93%) saturate(2534%) hue-rotate(218deg) brightness(103%) contrast(102%);
+          filter: invert(86%) sepia(93%) saturate(2534%) hue-rotate(218deg) brightness(103%) contrast(102%);
+}
+
+* body #logo-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+* body #logo-cont #logo {
+  width: 12.5em;
+}
+
+* body #invoice-cont {
+  margin: 0 0 0 2em;
+  font-weight: bold;
+}
+
+* body #invoice-cont span {
+  font-weight: normal;
+}
+
+* body #container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body #container table {
+  margin: 1em 0 0 0;
+  width: 80%;
+  border: 2px solid black;
+}
+
+* body #container table th {
+  border-bottom: 1px solid black;
+}
+
+* body #container table td {
+  text-align: center;
+}
+
+* body #container table input {
+  width: 10%;
+}
+
+* body #container table .desc-list {
+  width: 75%;
+}
+
+* body #total-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-weight: bold;
+  margin-top: 2em;
+}
+/*# sourceMappingURL=style.css.map */
