@@ -50,82 +50,39 @@ nav {
   background: #20272e;
 }
 
-#twtr-btn {
-  width: 1.5em;
-  height: 1.5em;
-  padding: 1em;
-  border-radius: 1em;
-  transition-property: background-color;
-  transition-duration: 0.3s;
-
-  &:hover {
-    background-color: #00acee;
-  }
-}
-
-#twch-btn {
-  width: 1.5em;
-  height: 1.5em;
-  padding: 1em;
-  border-radius: 1em;
-  transition-property: background-color;
-  transition-duration: 0.3s;
-
-  &:hover {
-    background-color: #9147fe;
-  }
-}
-
-#dscrd-btn {
-  width: 1.5em;
-  height: 1.5em;
-  padding: 1em;
-  border-radius: 1em;
-  transition-property: background-color;
-  transition-duration: 0.3s;
-
-  &:hover {
-    background-color: #7289d9;
-  }
-}
-
-#fb-btn {
-  width: 1.5em;
-  height: 1.5em;
-  padding: 1em;
-  border-radius: 1em;
-  transition-property: background-color;
-  transition-duration: 0.3s;
-
-  &:hover {
-    background-color: #3b5998;
-  }
-}
-
-#yt-btn {
-  width: 1.5em;
-  height: 1.5em;
-  padding: 1em;
-  border-radius: 1em;
-  transition-property: background-color;
-  transition-duration: 0.3s;
-
-  &:hover {
-    background-color: #ff0000;
-  }
-}
-
+#twtr-btn,
+#twch-btn,
+#dscrd-btn,
+#fb-btn,
+#yt-btn,
 #wa-btn {
   width: 1.5em;
   height: 1.5em;
   padding: 1em;
-  border-radius: 1em;
-  transition-property: background-color;
-  transition-duration: 0.3s;
+}
 
-  &:hover {
-    background-color: #4fce5d;
-  }
+#twtr-btn:hover {
+  filter: invert(45%) sepia(74%) saturate(2003%) hue-rotate(165deg) brightness(102%) contrast(101%);
+}
+
+#twch-btn:hover {
+  filter: invert(34%) sepia(68%) saturate(5050%) hue-rotate(250deg) brightness(103%) contrast(99%);
+}
+
+#dscrd-btn:hover {
+  filter: invert(58%) sepia(95%) saturate(1357%) hue-rotate(198deg) brightness(88%) contrast(93%);
+}
+
+#fb-btn:hover {
+  filter: invert(32%) sepia(10%) saturate(3585%) hue-rotate(183deg) brightness(96%) contrast(84%);
+}
+
+#yt-btn:hover {
+  filter: invert(12%) sepia(100%) saturate(6245%) hue-rotate(0deg) brightness(93%) contrast(118%);
+}
+
+#wa-btn:hover {
+  filter: invert(64%) sepia(8%) saturate(2833%) hue-rotate(76deg) brightness(103%) contrast(99%);
 }
 
 .mobile-menu {
@@ -225,22 +182,17 @@ h2 {
   border-radius: 3em;
 }
 
-#rps-game {
-  width: 99.5%;
+.project-frame {
+  width: 60%;
   height: 500px;
   border-radius: 3em;
-  display: none;
 }
 
 #projects {
   display: flex;
-  justify-content: center;
-
-  #rps-button {
-    margin: 5.5em 0.5em 1em 0.5em;
-    text-align: center;
-    padding: 1em;
-  }
+  flex-direction: column;
+  margin-top: 3em;
+  text-align: center;
 }
 
 nav.menu-btn {
@@ -356,7 +308,7 @@ nav {
   }
 
   section {
-    padding: 3em 4em;
+    padding: 1em 4em;
   }
 
   .hero .container {
@@ -397,84 +349,17 @@ nav {
   }
 
   .social-list {
-    margin: 0 6em 0 6em;
+    margin: 0 6em;
 
-    #twtr-btn {
-      width: 2em;
-      height: 2em;
-      padding: 1em;
-      border-radius: 1em;
-      transition-property: background-color;
-      transition-duration: 0.3s;
-
-      &:hover {
-        background-color: #00acee;
-      }
-    }
-
-    #twch-btn {
-      width: 2em;
-      height: 2em;
-      padding: 1em;
-      border-radius: 1em;
-      transition-property: background-color;
-      transition-duration: 0.3s;
-
-      &:hover {
-        background-color: #9147fe;
-      }
-    }
-
-    #dscrd-btn {
-      width: 2em;
-      height: 2em;
-      padding: 1em;
-      border-radius: 1em;
-      transition-property: background-color;
-      transition-duration: 0.3s;
-
-      &:hover {
-        background-color: #7289d9;
-      }
-    }
-
-    #fb-btn {
-      width: 2em;
-      height: 2em;
-      padding: 1em;
-      border-radius: 1em;
-      transition-property: background-color;
-      transition-duration: 0.3s;
-
-      &:hover {
-        background-color: #3b5998;
-      }
-    }
-
-    #yt-btn {
-      width: 2em;
-      height: 2em;
-      padding: 1em;
-      border-radius: 1em;
-      transition-property: background-color;
-      transition-duration: 0.3s;
-
-      &:hover {
-        background-color: #ff0000;
-      }
-    }
-
+    #twtr-btn,
+    #twch-btn,
+    #dscrd-btn,
+    #fb-btn,
+    #yt-btn,
     #wa-btn {
-      width: 2em;
-      height: 2em;
+      width: 3em;
+      height: 3em;
       padding: 1em;
-      border-radius: 1em;
-      transition-property: background-color;
-      transition-duration: 0.3s;
-
-      &:hover {
-        background-color: #4fce5d;
-      }
     }
   }
 }

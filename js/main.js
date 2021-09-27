@@ -1,8 +1,6 @@
 const oops = document.getElementById('mobile-cta'),
     nav = document.querySelector('nav'),
-    mobileBtnExit = document.getElementById('mobile-exit'),
-    rpsBtn = document.getElementById('rps-button'),
-    invoiceBtn = document.getElementById('invoice-button');
+    mobileBtnExit = document.getElementById('mobile-exit');
 
 oops.addEventListener('click', () => {
     nav.classList.add('menu-btn');
@@ -10,20 +8,4 @@ oops.addEventListener('click', () => {
 
 mobileBtnExit.addEventListener('click', () => {
     nav.classList.remove('menu-btn');
-});
-
-rpsBtn.addEventListener('click', () => {
-    if (document.getElementById('rps-game1').style.display !== 'block') {
-        document.getElementById('rps-game1').style.display = 'block';
-    } else {
-        document.getElementById('rps-game1').style.display = 'none';
-    }
-});
-
-invoiceBtn.addEventListener('click', () => {
-    if (document.getElementById('rps-game').style.display !== 'block') {
-        document.getElementById('rps-game').style.display = 'block';
-    } else {
-        document.getElementById('rps-game').style.display = 'none';
-    }
 });

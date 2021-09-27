@@ -8,13 +8,6 @@
     <link rel="icon" type="image/jpg" href="/SeanPrice13/images/sp13.jpg">
 </head>
 <body>
-        <!-- Messenger Chat Plugin Code -->
-        <div id="fb-root"></div>
-
-        <!-- Your Chat Plugin code -->
-        <div id="fb-customer-chat" class="fb-customerchat">
-        </div>
-
     <div class="navbar">
         <div class="container">
             <a class="logo" href="index.html">SeanPrice<span>13</span></a>
@@ -24,7 +17,7 @@
                 <ul class="primary-nav">
                     <li class="current"><a href="index.html">Home</a></li>
                     <li><a href="downloads.html">Downloads</a></li>
-                    <li><a href="other.html">Other</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                 </ul>
                 <ul class="secondary-nav">
                     <li><a href="about.html">About Me</a></li>                       
@@ -44,7 +37,7 @@
                 </div>
             </div>
                 <div class="yt-video">
-                    <iframe id="yt-frame" src="https://www.youtube.com/embed/9No-FiEInLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                    <iframe id="yt-frame" src="https://www.youtube.com/embed/M3i2X0MT_B8" title="YouTube Intro Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
                 </div>     
             </div> 
         </section>
@@ -52,7 +45,7 @@
     <section class="social-section">
         <div class="social-container">
             <ul class="social-list">
-                <li><a href="https://facebook.com/bentleyprice" target="_blank"><img src="images/facebook.svg" class="social" id="fb-btn" alt="Facebook"></a></li>
+                <li><a href="https://facebook.com/SeanPrice13" target="_blank"><img src="images/facebook.svg" class="social" id="fb-btn" alt="Facebook"></a></li>
                 <li><a href="https://www.youtube.com/channel/UCvAEh0rAfS73A3u0ULm1_pg" target="_blank"><img src="images/youtube.svg" class="social" id="yt-btn" alt="YouTube"></a></li>
                 <li><a href="https://discord.gg/qMBwJfm" target="_blank"><img src="images/discord.svg" class="social" id="dscrd-btn" alt="Discord"></a></li>
                 <li><a href="https://twitch.com/SeanPrice13" target="_blank"><img src="images/twitch.svg" class="social" id="twch-btn" alt="Twitch"></a></li>
@@ -61,8 +54,6 @@
             </ul>
         </div>
     </section>
-    
     <script src="js/main.js"></script>
-
 </body>
 </html>
