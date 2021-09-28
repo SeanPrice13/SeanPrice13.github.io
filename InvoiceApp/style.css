@@ -7,7 +7,7 @@
 
 * body {
   background-color: #cccccc;
-  margin: 1em 1em 1em 0;
+  padding: 1em 1em 0.5em 0;
   font-size: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,16 +16,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  overflow-y: hidden;
-}
-
-* body #full-document {
-  -webkit-box-shadow: 0 0 0.5em black;
-          box-shadow: 0 0 0.5em black;
-  background-color: white;
   width: 100%;
-  margin-bottom: -0.5em;
-  position: relative;
 }
 
 * body #cont-panel {
@@ -57,7 +48,16 @@
           filter: invert(86%) sepia(93%) saturate(2534%) hue-rotate(218deg) brightness(103%) contrast(102%);
 }
 
-* body #logo-cont {
+* body #full-document {
+  -webkit-box-shadow: 0 0 0.5em black;
+          box-shadow: 0 0 0.5em black;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+* body #full-document #logo-cont {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,20 +67,20 @@
   padding-right: 1em;
 }
 
-* body #logo-cont #logo {
+* body #full-document #logo-cont #logo {
   width: 15em;
 }
 
-* body #invoice-cont {
-  margin: 0 0 0 2em;
+* body #full-document #invoice-cont {
+  margin-left: 2em;
   font-weight: bold;
 }
 
-* body #invoice-cont span {
+* body #full-document #invoice-cont span {
   font-weight: normal;
 }
 
-* body #container {
+* body #full-document #container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,32 +90,30 @@
   margin-top: 1em;
 }
 
-* body #container table {
+* body #full-document #container table {
   width: 80%;
   border: 2px solid black;
 }
 
-* body #container table th {
+* body #full-document #container table th {
   border-bottom: 1px solid black;
   width: 50%;
 }
 
-* body #container table td,
-* body #container table option,
-* body #container table select {
+* body #full-document #container table td,
+* body #full-document #container table option,
+* body #full-document #container table select {
   text-align: center;
 }
 
-* body #container table .desc-list {
+* body #full-document #container table .desc-list {
   width: 100%;
 }
 
-* body #total-cont {
+* body #full-document #total-cont {
   font-weight: bold;
   margin: 2em;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  text-align: right;
 }
 
 @media only screen and (max-width: 450px) {
@@ -128,11 +126,6 @@
   select #cont-panel img,
   option #cont-panel img {
     width: 2em;
-  }
-  body #full-document,
-  select #full-document,
-  option #full-document {
-    margin-bottom: -3em;
   }
   body #logo-cont,
   select #logo-cont,

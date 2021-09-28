@@ -5,20 +5,13 @@
 
     body {
         background-color: #cccccc;
-        margin: 1em 1em 1em 0;
+        padding: 1em 1em 0.5em 0;
         font-size: 1rem;
         display: flex;
         justify-content: center;
         height: 100%;
-        overflow-y: hidden;
-
-        #full-document {
-            box-shadow: 0 0 0.5em black;
-            background-color: white;
-            width: 100%;
-            margin-bottom: -0.5em;
-            position: relative;
-        }
+        width: 100%;
+        // overflow-y: hidden;
 
         #cont-panel {
             height: 90vh;
@@ -40,57 +33,66 @@
             }
         }
 
-        #logo-cont {
-            display: flex;
-            justify-content: flex-end;
-            padding-right: 1em;
+        #full-document {
+            box-shadow: 0 0 0.5em black;
+            background-color: white;
+            width: 100%;
+            height: 100%;
+            position: relative;
 
-            #logo {
-                width: 15em;
-            }
-        }
+            #logo-cont {
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 1em;
 
-        #invoice-cont {
-            margin: 0 0 0 2em;
-            font-weight: bold;
-
-            span {
-                font-weight: normal;
-            }
-        }
-
-        #container {
-            display: flex;
-            justify-content: center;
-            margin-top: 1em;
-
-            table {
-                width: 80%;
-                border: 2px solid black;
-
-                th {
-                    border-bottom: 1px solid black;
-                    width: 50%;
-                }
-
-                td,
-                option,
-                select {
-                    text-align: center;
-                }
-
-                .desc-list {
-                    width: 100%;
+                #logo {
+                    width: 15em;
                 }
             }
-        }
 
-        #total-cont {
-            font-weight: bold;
-            margin: 2em;
-            position: absolute;
-            bottom: 0;
-            right: 0;
+            #invoice-cont {
+                margin-left: 2em;
+                font-weight: bold;
+
+                span {
+                    font-weight: normal;
+                }
+            }
+
+            #container {
+                display: flex;
+                justify-content: center;
+                margin-top: 1em;
+
+                table {
+                    width: 80%;
+                    border: 2px solid black;
+
+                    th {
+                        border-bottom: 1px solid black;
+                        width: 50%;
+                    }
+
+                    td,
+                    option,
+                    select {
+                        text-align: center;
+                    }
+
+                    .desc-list {
+                        width: 100%;
+                    }
+                }
+            }
+
+            #total-cont {
+                font-weight: bold;
+                margin: 2em;
+                // position: absolute;
+                // bottom: 0;
+                // width: 80vw;
+                text-align: right;
+            }
         }
     }
 }
@@ -106,10 +108,6 @@
             img {
                 width: 2em;
             }
-        }
-
-        #full-document {
-            margin-bottom: -3em;
         }
 
         #logo-cont {

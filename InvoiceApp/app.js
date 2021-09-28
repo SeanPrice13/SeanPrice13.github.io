@@ -1,10 +1,3 @@
-let invData = {
-    date: 0,
-    customer: 0,
-    email: 0,
-    phone: 0,
-};
-
 let sum = 0;
 
 //Create/Load Local Storage
@@ -15,13 +8,35 @@ if (localStorage.getItem('lastInv') == null) {
     document.getElementById('inv-no').innerHTML = 'HER' + localStorage.getItem('newInv');
 }
 
+//Save As PDF & Update Invoice Number
 const saveInv = () => {
-    lastInv = parseInt(document.getElementById('inv-no').innerHTML.substring(3));
-    localStorage.setItem('lastInv', lastInv);
-    newInv = (parseInt(document.getElementById('inv-no').innerHTML.substring(3)) + 1);
-    localStorage.setItem('newInv', newInv);
-    document.getElementById('inv-no').innerHTML = 'HER' + newInv;
-    location.reload();
+    let element = document.querySelector('#full-document');
+    html2pdf(element, {
+        margin: 0,
+        filename: document.querySelector('#inv-no').innerHTML + '.pdf',
+        image: {
+            type: 'png',
+            quality: 1
+        },
+        html2canvas: {
+            scale: 2,
+            logging: true
+        },
+        jsPDF: {
+            unit: 'in',
+            format: 'a4',
+            orientation: 'p'
+        }
+    });
+
+    setTimeout(() => {
+        lastInv = parseInt(document.getElementById('inv-no').innerHTML.substring(3));
+        localStorage.setItem('lastInv', lastInv);
+        newInv = (parseInt(document.getElementById('inv-no').innerHTML.substring(3)) + 1);
+        localStorage.setItem('newInv', newInv);
+        document.getElementById('inv-no').innerHTML = 'HER' + newInv;
+        location.reload();
+    }, 1000);
 }
 
 //Generate the Current Date
@@ -54,11 +69,18 @@ const newItem = () => {
     //Set Price for Selected Service
     const setPrice = () => {
         let amt = Number(document.querySelector('.srvcPrice').value);
-        total.innerHTML = 'CAD $' + amt.toFixed(2);
 
-        //Update Total Due
-        sum = (Number(sum) + amt).toFixed(2);
-        document.querySelector('#grand-total').innerHTML = sum;
+        if (desc.innerHTML == 'VIP Discount') {
+            total.innerHTML = 'CAD $' + amt.toFixed(2) + '-';
+            sum = (Number(sum) - amt).toFixed(2);
+            //Update Total Due
+            document.querySelector('#grand-total').innerHTML = sum;
+        } else {
+            total.innerHTML = 'CAD $' + amt.toFixed(2);
+            sum = (Number(sum) + amt).toFixed(2);
+            //Update Total Due
+            document.querySelector('#grand-total').innerHTML = sum;
+        }
     }
 
     document.querySelectorAll('.srvcPrice').forEach(element => {
@@ -75,7 +97,6 @@ const redoInv = () => {
 const setName = () => {
     document.getElementById('name').children[0].style.color = 'black';
     document.getElementById('name').children[0].innerHTML = document.getElementById('invname').value;
-    invData.customer = document.getElementById('name').children[0].innerHTML;
 }
 
 const editName = () => {
@@ -90,7 +111,6 @@ document.querySelector('#name').children[0].addEventListener('click', editName);
 const setEmail = () => {
     document.getElementById('email').children[0].style.color = 'black';
     document.getElementById('email').children[0].innerHTML = document.getElementById('invemail').value;
-    invData.email = document.getElementById('email').children[0].innerHTML;
 }
 
 const editEmail = () => {
@@ -105,7 +125,6 @@ document.querySelector('#email').children[0].addEventListener('click', editEmail
 const setPhone = () => {
     document.getElementById('phone').children[0].style.color = 'black';
     document.getElementById('phone').children[0].innerHTML = document.getElementById('telnum').value;
-    invData.phone = document.getElementById('phone').children[0].innerHTML;
 }
 
 const editPhone = () => {
