@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+* body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* body #restart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1em;
+}
+
+* body #restart img {
+  width: 3em;
+}
+
+* body #restart img:hover {
+  -webkit-filter: invert(12%) sepia(99%) saturate(7025%) hue-rotate(360deg) brightness(97%) contrast(111%);
+          filter: invert(12%) sepia(99%) saturate(7025%) hue-rotate(360deg) brightness(97%) contrast(111%);
+}
+
+* body #game {
+  width: 600px;
+  height: 300px;
+  border: 1px solid black;
+  background-color: black;
+  margin: auto;
+}
+
+* body #game #block,
+* body #game #dino {
+  width: 30px;
+  position: relative;
+}
+
+* body #game #dino {
+  height: 100px;
+  background-color: #333;
+  top: 200px;
+  left: 15px;
+  border-radius: 10%;
+}
+
+* body #game .dinojump {
+  -webkit-animation: dinojump 0.3s linear;
+          animation: dinojump 0.3s linear;
+}
+
+* body #game .block {
+  -webkit-animation: incomingblock 1.5s linear infinite;
+          animation: incomingblock 1.5s linear infinite;
+}
+
+* body #game #block {
+  height: 30px;
+  background-color: red;
+  top: 170px;
+  left: 600px;
+  border-radius: 50%;
+}
+
+* body h1 {
+  text-align: center;
+}
+
+@-webkit-keyframes incomingblock {
+  0% {
+    left: 650px;
+  }
+  100% {
+    left: -50px;
+  }
+}
+
+@keyframes incomingblock {
+  0% {
+    left: 650px;
+  }
+  100% {
+    left: -50px;
+  }
+}
+
+@-webkit-keyframes dinojump {
+  0% {
+    top: 200px;
+  }
+  12% {
+    top: 175px;
+  }
+  25% {
+    top: 150px;
+  }
+  37% {
+    top: 125px;
+  }
+  50% {
+    top: 100px;
+  }
+  62% {
+    top: 125px;
+  }
+  75% {
+    top: 150px;
+  }
+  87% {
+    top: 175px;
+  }
+  100% {
+    top: 200px;
+  }
+}
+
+@keyframes dinojump {
+  0% {
+    top: 200px;
+  }
+  12% {
+    top: 175px;
+  }
+  25% {
+    top: 150px;
+  }
+  37% {
+    top: 125px;
+  }
+  50% {
+    top: 100px;
+  }
+  62% {
+    top: 125px;
+  }
+  75% {
+    top: 150px;
+  }
+  87% {
+    top: 175px;
+  }
+  100% {
+    top: 200px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
