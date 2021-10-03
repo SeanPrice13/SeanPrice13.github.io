@@ -10,9 +10,9 @@
 <body>
     <div id="cont-panel">
         <!-- <img src="./assets/arrow-left.svg" alt="Previous Invoice" id="prev-inv" onclick="cycleInv();"> -->
-        <img src="./assets/plus.svg" alt="Add Item" id="add-item" onclick="newItem();">
-        <img src="./assets/save.svg" alt="Save Invoice" id="save-inv" onclick="saveInv();">
-        <img src="./assets/redo-alt-solid.svg" alt="Refresh" id="redo" onclick="redoInv();">
+        <img src="./assets/plus.svg" alt="Add Item" id="add-item">
+        <img src="./assets/save.svg" alt="Save Invoice" id="save-inv">
+        <img src="./assets/redo-alt-solid.svg" alt="Refresh" id="redo">
         <!-- <img src="./assets/arrow-right.svg" alt="Next Invoice" id="next-inv" onclick="cycleInv();"> -->
     </div>
 
@@ -21,9 +21,9 @@
         <div id="invoice-cont">
             <p>Invoice No: <span id="inv-no"></span></p>
             <p id="date">Date: <span></span></p>
-            <p id="name">Name: <span style="color: Red;">Edit</span></p>
-            <p id="email">Email: <span style="color: Red;">Edit</span></p>
-            <p id="phone">Phone: <span style="color: Red;">Edit</p>
+            <p id="name">Name: <span contenteditable="true" class="cust-data" placeholder="Edit Name"></span></p>
+            <p id="email">Email: <span contenteditable="true"  class="cust-data" placeholder="Edit Email"></span></p>
+            <p id="phone">Phone: <span contenteditable="true" class="cust-data" placeholder="Edit Phone"></span></p>
         </div>
 
         <div id="container">

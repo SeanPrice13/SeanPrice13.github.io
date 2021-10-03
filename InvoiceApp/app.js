@@ -1,11 +1,60 @@
 let sum = 0;
 
-//Create/Load Local Storage
+//Create/Load Local Storage Invoice Number
 if (localStorage.getItem('lastInv') == null) {
     let invNo = '101';
-    document.getElementById('inv-no').innerHTML = 'HER' + invNo;
+    document.querySelector('#inv-no').innerHTML = 'HER' + invNo;
 } else {
-    document.getElementById('inv-no').innerHTML = 'HER' + localStorage.getItem('newInv');
+    document.querySelector('#inv-no').innerHTML = 'HER' + localStorage.getItem('newInv');
+}
+
+//Generate the Current Date
+let today = new Date();
+const dd = String(today.getDate()).padStart(2, '0'),
+    mm = String(today.getMonth() + 1).padStart(2, '0'), //January is 0!
+    yyyy = today.getFullYear();
+today = mm + '/' + dd + '/' + yyyy;
+document.querySelector('#date').children[0].innerHTML = today;
+
+//Add Item to Invoice
+const newItem = () => {
+    document.querySelector('#add-item').removeEventListener('click', newItem);
+    let row = document.createElement('tr'),
+        desc = document.createElement('td'),
+        total = document.createElement('td');
+    desc.innerHTML = '<select name="desc" class="desc-list"><option value=" ">Select Description</option><option value="Women\'s Haircut">Women\'s Haircut</option><option value="Blowdry (Short)">Blowdry (Short)</option><option value="Blowdry (Medium)">Blowdry (Medium)</option><option value="Blowdry (Long)">Blowdry (Long)</option><option value="Protective Style">Protective Style</option><option value="Updo">Updo</option><option value="Men\'s Haircut">Men\'s Haircut</option><option value="Full Color">Full Color</option><option value="Balayage">Balayage</option><option value="Full Highlights">Full Highlights</option><option value="Partial Highlights">Partial Highlights</option><option value="Color + Highlights">Color + Highlights</option><option value="Ombre">Ombre</option><option value="VIP Discount">VIP Discount</option></select>';
+    total.innerHTML = 'CAD $' + '<span class="srvcPrice" contenteditable="false">0.00</span>';
+    row.appendChild(desc);
+    row.appendChild(total);
+    document.querySelector('table').appendChild(row);
+
+    //Set Service Description
+    const setDesc = (e) => {
+        desc.innerHTML = e.target.value;
+        document.querySelector('.srvcPrice').contentEditable = 'true';
+        document.querySelector('.srvcPrice').addEventListener('focusout', setPrice);
+    }
+
+    //Set Price for Selected Service
+    const setPrice = () => {
+        let amt = Number(document.querySelector('.srvcPrice').innerHTML);
+        document.querySelector('.srvcPrice').contentEditable = 'false';
+        document.querySelector('.srvcPrice').classList.remove('srvcPrice');
+        document.querySelector('#add-item').addEventListener('click', newItem);
+
+        if (desc.innerHTML == 'VIP Discount') {
+            total.innerHTML = total.innerHTML + '-';
+            sum = (Number(sum) - amt).toFixed(2);
+            //Update Total Due
+            document.querySelector('#grand-total').innerHTML = sum;
+        } else {
+            sum = (Number(sum) + amt).toFixed(2);
+            //Update Total Due
+            document.querySelector('#grand-total').innerHTML = sum;
+        }
+    }
+
+    document.querySelector('.desc-list').addEventListener('change', setDesc);
 }
 
 //Save As PDF & Update Invoice Number
@@ -30,107 +79,17 @@ const saveInv = () => {
     });
 
     setTimeout(() => {
-        lastInv = parseInt(document.getElementById('inv-no').innerHTML.substring(3));
+        lastInv = parseInt(document.querySelector('#inv-no').innerHTML.substring(3));
         localStorage.setItem('lastInv', lastInv);
-        newInv = (parseInt(document.getElementById('inv-no').innerHTML.substring(3)) + 1);
+        newInv = (parseInt(document.querySelector('#inv-no').innerHTML.substring(3)) + 1);
         localStorage.setItem('newInv', newInv);
-        document.getElementById('inv-no').innerHTML = 'HER' + newInv;
+        document.querySelector('#inv-no').innerHTML = 'HER' + newInv;
         location.reload();
     }, 1000);
 }
 
-//Generate the Current Date
-let today = new Date();
-const dd = String(today.getDate()).padStart(2, '0'),
-    mm = String(today.getMonth() + 1).padStart(2, '0'), //January is 0!
-    yyyy = today.getFullYear();
-
-today = mm + '/' + dd + '/' + yyyy;
-document.getElementById('date').children[0].innerHTML = today;
-
-//Add Item to Invoice
-const newItem = () => {
-    let row = document.createElement('tr'),
-        desc = document.createElement('td'),
-        total = document.createElement('td');
-    desc.innerHTML = '<select name="desc" class="desc-list"><option value=" ">Select Description</option><option value="Women\'s Haircut">Women\'s Haircut</option><option value="Women\'s Hair Wash">Women\'s Hair Wash</option><option value ="Women\'s Hair Dye">Women\'s Hair Dye</option><option value="VIP Discount">VIP Discount</option></select>';
-    total.innerHTML = 'CAD $' + '<input type="number" name="item-price" min="0" style="width: 15%" class="srvcPrice"></input>';
-    row.appendChild(desc);
-    row.appendChild(total);
-    document.querySelector('table').appendChild(row);
-
-    //Set Service Description
-    const setDesc = (e) => {
-        desc.innerHTML = e.target.value;
-    }
-
-    document.querySelector('.desc-list').addEventListener('change', setDesc);
-
-    //Set Price for Selected Service
-    const setPrice = () => {
-        let amt = Number(document.querySelector('.srvcPrice').value);
-
-        if (desc.innerHTML == 'VIP Discount') {
-            total.innerHTML = 'CAD $' + amt.toFixed(2) + '-';
-            sum = (Number(sum) - amt).toFixed(2);
-            //Update Total Due
-            document.querySelector('#grand-total').innerHTML = sum;
-        } else {
-            total.innerHTML = 'CAD $' + amt.toFixed(2);
-            sum = (Number(sum) + amt).toFixed(2);
-            //Update Total Due
-            document.querySelector('#grand-total').innerHTML = sum;
-        }
-    }
-
-    document.querySelectorAll('.srvcPrice').forEach(element => {
-        element.addEventListener('focusout', setPrice);
-    });
-}
-
-//Refresh
-const redoInv = () => {
+document.querySelector('#add-item').addEventListener('click', newItem);
+document.querySelector('#save-inv').addEventListener('click', saveInv);
+document.querySelector('#redo').addEventListener('click', () => {
     location.reload();
-}
-
-//Add Customer Name
-const setName = () => {
-    document.getElementById('name').children[0].style.color = 'black';
-    document.getElementById('name').children[0].innerHTML = document.getElementById('invname').value;
-}
-
-const editName = () => {
-    document.querySelector('#name').children[0].innerHTML = '<input type="text" name="invname" id="invname">';
-    document.getElementById('invname').addEventListener('focusout', setName);
-    document.querySelector('#name').children[0].removeEventListener('click', editName);
-}
-
-document.querySelector('#name').children[0].addEventListener('click', editName);
-
-//Add Customer Email
-const setEmail = () => {
-    document.getElementById('email').children[0].style.color = 'black';
-    document.getElementById('email').children[0].innerHTML = document.getElementById('invemail').value;
-}
-
-const editEmail = () => {
-    document.querySelector('#email').children[0].innerHTML = '<input type="email" name="invemail" id="invemail">';
-    document.getElementById('invemail').addEventListener('focusout', setEmail);
-    document.querySelector('#email').children[0].removeEventListener('click', editEmail);
-}
-
-document.querySelector('#email').children[0].addEventListener('click', editEmail);
-
-//Add Customer Phone Number
-const setPhone = () => {
-    document.getElementById('phone').children[0].style.color = 'black';
-    document.getElementById('phone').children[0].innerHTML = document.getElementById('telnum').value;
-}
-
-const editPhone = () => {
-    document.querySelector('#phone').children[0].innerHTML = '<input type="tel" name="phone" id="telnum">';
-    document.getElementById('telnum').addEventListener('focusout', setPhone);
-    document.querySelector('#phone').children[0].removeEventListener('click', editPhone);
-}
-
-document.querySelector('#phone').children[0].addEventListener('click', editPhone);
+});
