@@ -23,7 +23,7 @@ const newItem = () => {
         desc = document.createElement('td'),
         total = document.createElement('td');
     desc.innerHTML = '<select name="desc" class="desc-list"><option value=" ">Select Description</option><option value="Women\'s Haircut">Women\'s Haircut</option><option value="Blowdry (Short)">Blowdry (Short)</option><option value="Blowdry (Medium)">Blowdry (Medium)</option><option value="Blowdry (Long)">Blowdry (Long)</option><option value="Protective Style">Protective Style</option><option value="Updo">Updo</option><option value="Men\'s Haircut">Men\'s Haircut</option><option value="Full Color">Full Color</option><option value="Balayage">Balayage</option><option value="Full Highlights">Full Highlights</option><option value="Partial Highlights">Partial Highlights</option><option value="Color + Highlights">Color + Highlights</option><option value="Ombre">Ombre</option><option value="VIP Discount">VIP Discount</option></select>';
-    total.innerHTML = 'CAD $' + '<span class="srvcPrice" contenteditable="false">0.00</span>';
+    total.innerHTML = 'CAD $' + '<span>0.00</span>';
     row.appendChild(desc);
     row.appendChild(total);
     document.querySelector('table').appendChild(row);
@@ -31,30 +31,41 @@ const newItem = () => {
     //Set Service Description
     const setDesc = (e) => {
         desc.innerHTML = e.target.value;
-        document.querySelector('.srvcPrice').contentEditable = 'true';
+        total.innerHTML = 'CAD $' + '<input type="number" class="srvcPrice" min="0" />';
         document.querySelector('.srvcPrice').addEventListener('focusout', setPrice);
     }
 
     //Set Price for Selected Service
     const setPrice = () => {
-        let amt = Number(document.querySelector('.srvcPrice').innerHTML);
-        document.querySelector('.srvcPrice').contentEditable = 'false';
-        document.querySelector('.srvcPrice').classList.remove('srvcPrice');
-        document.querySelector('#add-item').addEventListener('click', newItem);
+        let amt = Number(document.querySelector('.srvcPrice').value);
 
         if (desc.innerHTML == 'VIP Discount') {
-            total.innerHTML = total.innerHTML + '-';
+            total.innerHTML = 'CAD $' + amt.toFixed(2) + '-';
             sum = (Number(sum) - amt).toFixed(2);
             //Update Total Due
             document.querySelector('#grand-total').innerHTML = sum;
         } else {
+            total.innerHTML = 'CAD $' + amt.toFixed(2);
             sum = (Number(sum) + amt).toFixed(2);
             //Update Total Due
             document.querySelector('#grand-total').innerHTML = sum;
         }
+        document.querySelector('#add-item').addEventListener('click', newItem);
     }
 
     document.querySelector('.desc-list').addEventListener('change', setDesc);
+}
+
+const getImgData = () => {
+    const files = document.querySelector('#cust-img').files[0];
+    if (files) {
+        const fileReader = new FileReader();
+        fileReader.readAsDataURL(files);
+        fileReader.addEventListener('load', function () {
+            document.querySelector('#img-cont').style.display = 'flex';
+            document.querySelector('#img-cont').innerHTML = '<img src="' + this.result + '" />';
+        });
+    }
 }
 
 //Save As PDF & Update Invoice Number
@@ -89,6 +100,7 @@ const saveInv = () => {
 }
 
 document.querySelector('#add-item').addEventListener('click', newItem);
+document.querySelector('#cust-img').addEventListener('change', getImgData);
 document.querySelector('#save-inv').addEventListener('click', saveInv);
 document.querySelector('#redo').addEventListener('click', () => {
     location.reload();

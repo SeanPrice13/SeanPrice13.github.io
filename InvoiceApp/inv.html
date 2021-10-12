@@ -9,11 +9,11 @@
 </head>
 <body>
     <div id="cont-panel">
-        <!-- <img src="./assets/arrow-left.svg" alt="Previous Invoice" id="prev-inv" onclick="cycleInv();"> -->
         <img src="./assets/plus.svg" alt="Add Item" id="add-item">
+        <label for="cust-img"><img src="./assets/image.svg" alt="Add Image"></label>
         <img src="./assets/save.svg" alt="Save Invoice" id="save-inv">
         <img src="./assets/redo-alt-solid.svg" alt="Refresh" id="redo">
-        <!-- <img src="./assets/arrow-right.svg" alt="Next Invoice" id="next-inv" onclick="cycleInv();"> -->
+        <input type="file" accept="image/*" name="Add Image" id="cust-img">
     </div>
 
     <div id="full-document">
@@ -22,7 +22,7 @@
             <p>Invoice No: <span id="inv-no"></span></p>
             <p id="date">Date: <span></span></p>
             <p id="name">Name: <span contenteditable="true" class="cust-data" placeholder="Edit Name"></span></p>
-            <p id="email">Email: <span contenteditable="true"  class="cust-data" placeholder="Edit Email"></span></p>
+            <p id="email">Email: <span contenteditable="true" class="cust-data" placeholder="Edit Email"></span></p>
             <p id="phone">Phone: <span contenteditable="true" class="cust-data" placeholder="Edit Phone"></span></p>
         </div>
 
@@ -38,9 +38,11 @@
         <div id="total-cont">
             <p>Total: CAD $<span id="grand-total">0.00</span></p>
         </div>
+
+        <div id="img-cont"></div>
     </div>
 
     <script src="./app.js"></script>
-    <script src="./libs/html2pdf/html2pdf.bundle.min.js"></script>
+    <script src="./libs/html2pdf.bundle.min.js"></script>
 </body>
 </html>
