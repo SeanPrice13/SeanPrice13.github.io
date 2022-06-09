@@ -35,5 +35,5 @@ const restart = () => {
 }
 
 score++;
-document.querySelector('#game').addEventListener('click', dinoJump);
+document.getElementById('game').addEventListener('click', dinoJump);
 collision();
